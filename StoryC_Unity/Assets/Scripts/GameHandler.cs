@@ -7,10 +7,12 @@ using UnityEngine.Audio;
 
 public class GameHandler : MonoBehaviour {
 
-        public static bool metghost1 = false; //YOu have met ghost1
-        public static bool metghost2 = false; //YOu have met ghost2
-        public static bool metghost3 = false; //YOu have met ghost3
+        public static bool metghost1 = false; //YOu have met ghost1, farmer (introduced Scene_3)
+        public static bool metghost2 = false; //YOu have met ghost2, actor (introduced Scene_4)
+        public static bool metghost3 = false; //YOu have met ghost3, businessman (introduced Scene_5)
+		
         public static int playerStatA; //
+		
         public static bool GameisPaused = false;
         public GameObject pauseMenuUI;
         public AudioMixer mixer;

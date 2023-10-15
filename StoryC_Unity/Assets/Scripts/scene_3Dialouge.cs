@@ -29,7 +29,9 @@ public class scene_3Dialogue : MonoBehaviour {
         private bool allowSpace = true;
 
 // initial visibility settings. Any new images or buttons need to also be SetActive(false);
-void Start(){  
+void Start(){ 
+		GameHandler.metghost1 = true;
+ 
         DialogueDisplay.SetActive(false);
         ArtChar1a.SetActive(false);
         ArtBG1.SetActive(true);
