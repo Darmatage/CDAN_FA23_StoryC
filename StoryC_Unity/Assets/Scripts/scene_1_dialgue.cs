@@ -21,7 +21,7 @@ public class Scene1Dialogue : MonoBehaviour {
         public GameObject Choice1a;
         public GameObject Choice1b;
         public GameObject NextScene1Button;
-        public GameObject NextScene2Button;
+        //public GameObject NextScene2Button;
         public GameObject nextButton;
        //public AudioSource audioSource;
         private bool allowSpace = true;
@@ -34,7 +34,7 @@ void Start(){
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         NextScene1Button.SetActive(false);
-        NextScene2Button.SetActive(false);
+        //NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
    }
 
@@ -135,7 +135,7 @@ public void Next(){
                 Char2speech.text = "";
                 nextButton.SetActive(false);
                 allowSpace = false;
-                NextScene2Button.SetActive(true);
+                //NextScene2Button.SetActive(true);
         }
 
       //Please do NOT delete this final bracket that ends the Next() function:
@@ -166,9 +166,9 @@ public void Next(){
         }
 
         public void SceneChange1(){
-               SceneManager.LoadScene("Scene2a");
+               SceneManager.LoadScene("Scene2");
         }
-        public void SceneChange2(){
-                SceneManager.LoadScene("Scene2b");
-        }
+        //public void SceneChange2(){
+        //        SceneManager.LoadScene("Scene2b");
+        //}
 }
