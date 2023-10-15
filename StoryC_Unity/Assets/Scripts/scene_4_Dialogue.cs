@@ -51,7 +51,6 @@ void Start(){
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
-        GameHandler.metghost1 = true;
    }
 
 void Update(){         // use spacebar as Next button
@@ -74,30 +73,36 @@ public void Next(){
                 Char1name.text = "YOU";
 				
 				if ((GameHandler.metghost1==false)&&(GameHandler.metghost3==false)){
-					Char1speech.text = "Jesus fuck, where are we? Where did the graveyard go?";
+					Char1speech.text = "Jesus fuck, where are we? \nWhere did the graveyard go?";
 				} else {
 					Char1speech.text = "Oh cool...a theater...how original...";
-				}
+				} 
 				
-				
-                Char2name.text = " ";
-                Char2speech.text = " ";
+                Char2name.text = "";
+                Char2speech.text = "";
         }
        else if (primeInt == 3){
-		   ArtChar1a.SetActive(true);
-                Char1name.text = " ";
-                Char1speech.text = " ";
+		   ArtChar1b.SetActive(true);
+                Char1name.text = "";
+                Char1speech.text = "";
                 Char2name.text = "ACTOR";
-                Char2speech.text = "Why yes! You are at the the-at-er! My home! The place where I create and influence!";
-                //gameHandler.AddPlayerStat(1);
+                Char2speech.text = "Why yes! \nYou are at the the-at-er!";
         }
-       else if (primeInt == 4){
-                Char1name.text = "YOU";
-                Char1speech.text = "Oh god just kill me, not this shit.";
-                Char2name.text = " ";
-                Char2speech.text = " ";
+		else if (primeInt == 4){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "ACTOR";
+                Char2speech.text = "My home! \nThe place where I create and influence!";
         }
        else if (primeInt == 5){
+		   ArtChar1b.SetActive(false);
+		   ArtChar1a.SetActive(true);
+                Char1name.text = "YOU";
+                Char1speech.text = "Oh god just kill me. \nNot this shit.";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+       else if (primeInt == 6){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Actor";
@@ -116,15 +121,16 @@ public void Next(){
        // after choice 1a (NO!)
        else if (primeInt == 20){
 		   ArtChar1a.SetActive(false);
+		   ArtChar1b.SetActive(false);
                 Char1name.text = "YOU";
-                Char1speech.text = "Where am I? Did I make it out?.....Hellooooo???";
+                Char1speech.text = "Where am I? \nDid I make it out...? \nHellooooo???";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
 	 else if (primeInt == 21){
 		 ArtChar1b.SetActive(true);
                 Char1name.text = "YOU";
-                Char1speech.text = "Oh god damn it I'm back here";
+                Char1speech.text = "Oh goddamnit. \nI'm back here";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -141,6 +147,8 @@ public void Next(){
                 Char2speech.text = "...and gaze in astonishment as I conjure Homer’s creation before your eyes!";
         }
        else if (primeInt == 24){
+		   StartCoroutine(FadeIn(BlackFade, true));
+           BlackFade.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "For fucks sake...";
                 Char2name.text = "";
@@ -151,15 +159,16 @@ public void Next(){
 
        // after choice 1b (anything you say, if it will get me out of here!)
        else if (primeInt == 30){
+		   ArtChar1a.SetActive(false);
 		   ArtChar1b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "ACTOR";
-                Char2speech.text = "Splendid! Let us begin!";
+                Char2speech.text = "Splendid! \nLet us begin!";
 	   }
        else if (primeInt == 31){
 		   //fade to black
-		   StartCoroutine(FadeIn(BlackFade));
+		   StartCoroutine(FadeIn(BlackFade, true));
            BlackFade.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -172,18 +181,18 @@ public void Next(){
 		//part 4c
 		else if (primeInt == 40){
 			//fade up from black
-		StartCoroutine(FadeOut(BlackFade));
+		StartCoroutine(FadeOut(BlackFade, true));
         //BlackFade.SetActive(false);
 			Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "ACTOR";
-            Char2speech.text = "So, now that you’ve witnessed my talent on display, what do you think?";
+            Char2speech.text = "So, now you’ve witnessed my talent on display! \nWhat do you think?";
         }
        else if (primeInt == 41){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "ACTOR";
-                Char2speech.text = "Phenomenal, right? I can tell by your face Ive completely amazed you!";
+                Char2speech.text = "Phenomenal, right? \nI can tell by your face I've completely amazed you!";
 		// Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -193,64 +202,75 @@ public void Next(){
 		
 		
 		// after choice 2a (truth)
-       else if (primeInt == 50){
+	 else if (primeInt == 50){
+		   ArtChar1a.SetActive(true);
+		   ArtChar1b.SetActive(false);
+                Char1name.text = "YOU";
+                Char1speech.text = "Didn't you notice me sleeping through the last half of it?";
+                Char2name.text = "";
+                Char2speech.text = "";
+	   } 
+       else if (primeInt == 51){
 		   ArtChar1a.SetActive(true);
 		   ArtChar1b.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "ACTOR";
-                Char2speech.text = "...What? No, it cant be. You loved it, you know you did!";
+                Char2speech.text = "...What? No, it can't be. \nYou loved it, you know you did!";
 	   } 
-       else if (primeInt == 51){
+       else if (primeInt == 52){
                 Char1name.text = "YOU";
-                Char1speech.text = "I don’t think I have ever seen such bad acting in my life! A pumpkin puppetered by mice could have given me a better show!";
+                Char1speech.text = "I don’t think I have ever seen such bad acting in my life! \nA pumpkin puppetered by mice could have given me a better show!";
                 Char2name.text = "";
                 Char2speech.text = "";
 				
         }
-		  else if (primeInt == 52){
+		  else if (primeInt == 53){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "ACTOR";
                 Char2speech.text = "How dare you! Why do you lie like so!";
 				
         }
-		  else if (primeInt == 53){
+		  else if (primeInt == 54){
                 Char1name.text = "YOU";
-                Char1speech.text = "Get it through your skull, IT. WAS. BAD.";
+                Char1speech.text = "Get it through your skull: \nIT. WAS. BAD.";
                 Char2name.text = "";
                 Char2speech.text = "";
 				
         }
-		  else if (primeInt == 54){
+		  else if (primeInt == 55){
 			  ArtChar1a.SetActive(false);
 			  ArtChar1c.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "ACTOR";
-                Char2speech.text = "I wont hear anymore of your lies! I lived my whole life on the stage, hell...";
+                Char2speech.text = "I won't hear anymore of your lies! \nI lived my whole life on the stage! Hell...";
 				
         }
-		  else if (primeInt == 55){ 
+		  else if (primeInt == 56){ 
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "ACTOR";
-                Char2speech.text = "...I even died on it, performing the very heart wrenching play I just did for you!";
+                Char2speech.text = "...I even died on it! \nPerforming the very heart-wrenching play I just did for you!";
         }
-		 else if (primeInt == 56){ 
+		 else if (primeInt == 57){ 
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "ACTOR";
-                Char2speech.text = "I think the town would be very gratefull to see my performance instead";
+                Char2speech.text = "I think the town would be very grateful to see my performance instead";
         }
-		 else if (primeInt == 57){ //fade
-		  StartCoroutine(FadeOut(ArtChar1c));
+		 else if (primeInt == 58){ //fade
+		  ArtChar1a.SetActive(false);
+		  ArtChar1b.SetActive(false);
+		  ArtChar1c.SetActive(true);
+		  StartCoroutine(FadeOut(ArtChar1c, false));
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-		 else if (primeInt == 58){ //player goes oh shit
+		 else if (primeInt == 59){ //player goes oh shit
                 Char1name.text = "YOU";
                 Char1speech.text = "oh shit";
                 Char2name.text = "";
@@ -262,8 +282,7 @@ public void Next(){
         }
 		
 		
-		
-		
+
 		
 			// after choice 2b (lie)
        else if (primeInt == 60){
@@ -272,7 +291,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "ACTOR";
-                Char2speech.text = "Oh i knew it! Even after all these years stuck in my own underworld I still have the gift!";
+                Char2speech.text = "Oh I knew it! \nEven after all these years stuck in the underworld I still have the gift!";
 	   } 
 	     else if (primeInt == 61){
                 Char1name.text = "YOU";
@@ -288,7 +307,7 @@ public void Next(){
 	   } 
 	     else if (primeInt == 63){
                 Char1name.text = "YOU";
-                Char1speech.text = "Ok dude calm down, I said it was great, thats all.";
+                Char1speech.text = "Ok, dude calm down. \nI said it was great, that's all.";
                 Char2name.text = "";
                 Char2speech.text = "";
 	   } 
@@ -296,7 +315,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "ACTOR";
-                Char2speech.text = " Oh you must tell me you must!";
+                Char2speech.text = "Oh you must tell me you must!";
 	   } 
 	     else if (primeInt == 65){
                 Char1name.text = "YOU";
@@ -308,7 +327,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "ACTOR";
-                Char2speech.text = "What your favorite part was! What did you love about my show?";
+                Char2speech.text = "What your favorite part was! \nWhat did you love about my show?";
 	   } 
 	     else if (primeInt == 67){
                 Char1name.text = "YOU";
@@ -350,7 +369,7 @@ public void Next(){
 		
 		  else if (primeInt == 73){
                 Char1name.text = "YOU";
-                Char1speech.text = "Huh? I mean, yeah that! Loved it. You really solilo-kweeed that quy! ";
+                Char1speech.text = "Huh? I mean, yeah that! Loved it. \nYou really solilo-kweeed that quy! ";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -359,7 +378,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "ACTOR";
-                Char2speech.text = "I knew I still have my gift, oh thank you for your brave honesty!";
+                Char2speech.text = "I knew I still have my gift! \nOh thank you for your brave honesty!";
         	//access scene change button
 				nextButton.SetActive(false);
                 allowSpace = false;
@@ -407,12 +426,12 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Actor";
-                Char2speech.text = "HOMER IS THE AUTHOR YOU IMPUDENT WRETCH!";
+                Char2speech.text = "HOMER IS THE AUTHOR, YOU IMPUDENT WRETCH!";
         }
 		
 		   else if (primeInt == 85){
                 Char1name.text = "YOU";
-                Char1speech.text = " Naw he's the yellow dude, he's not real you idiot its just a tv show.";
+                Char1speech.text = "Naw he's the yellow dude. \nHe's not real you idiot. \nIt's just a tv show.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -421,7 +440,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "ACTOR";
-                Char2speech.text = "YOU DIDNT PAY ATTENTION DID YOU?!";
+                Char2speech.text = "YOU DIDNT PAY ATTENTION, DID YOU?!";
         }
 		
 		   else if (primeInt == 87){
@@ -435,11 +454,15 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "ACTOR";
-                Char2speech.text = "HOW DARE YOU INSULT ME LIKE THIS";   
+                Char2speech.text = "HOW DARE YOU INSULT ME LIKE THIS? \nI WILL BRING MY TALENTS TO THE TOWN!";   
 		}
 
 		 else if (primeInt == 89){ //fade
-		  StartCoroutine(FadeOut(ArtChar1c));
+		   ArtChar1a.SetActive(false);
+		  ArtChar1b.SetActive(false);
+		  ArtChar1c.SetActive(true);
+		  StartCoroutine(FadeOut(ArtChar1c, false));
+		  
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -447,7 +470,7 @@ public void Next(){
         }
 		 else if (primeInt == 90){ //player goes oh shit
                 Char1name.text = "YOU";
-                Char1speech.text = "I should have lied.. why I am so honest";
+                Char1speech.text = "Crap. \nI should have lied.. \nwhy I am so honest?";
                 Char2name.text = "";
                 Char2speech.text = "";
 				//access scene change button
@@ -463,7 +486,7 @@ public void Next(){
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "I cannot listen to this. Where is the exit?";
+                Char1speech.text = "I cannot listen to this. \nWhere is the exit?";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 19;
@@ -474,7 +497,7 @@ public void Next(){
         }
         public void Choice1bFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "whatever it takes me to get out of this dump";
+                Char1speech.text = "Sure. Whatever it takes me to get out of this dump";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 29;
@@ -486,7 +509,7 @@ public void Next(){
 		
         public void Choice2aFunct(){ //if we say truth
                 Char1name.text = "YOU";
-                Char1speech.text = "Dude what are you talking about? I don’t know how you didnt notice me sleeping through the last half of it!";
+                Char1speech.text = "Dude what are you talking about?";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 49;
@@ -518,7 +541,7 @@ public void Next(){
                 allowSpace = true;
         }public void Choice3bFunct(){//if we lie 
                 Char1name.text = "YOU";
-                Char1speech.text = "Umm.. yeah so I really liked that part where Homer eats the donut!";
+                Char1speech.text = "Umm.. yeah, so, I really liked that part where Homer eats the donut!";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 79;
@@ -528,8 +551,7 @@ public void Next(){
                 allowSpace = true;
         }
 		
-		
-		
+
 		
         public void SceneChange1(){//actor ghost rampage scene
                SceneManager.LoadScene("Scene6");
@@ -539,24 +561,30 @@ public void Next(){
         }
 		
 		
-		IEnumerator FadeIn(GameObject fadeImage){
+		IEnumerator FadeIn(GameObject fadeImage, bool isBlack){
+			int col = 1;
+			if (isBlack){col=0;} else {col=1;} 
+			
                 float alphaLevel = 0;
-                fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                fadeImage.GetComponent<Image>().color = new Color(col, col, col, alphaLevel);
                 for(int i = 0; i < 100; i++){
                         alphaLevel += 0.01f;
                         yield return null;
-                        fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                        fadeImage.GetComponent<Image>().color = new Color(col, col, col, alphaLevel);
                         Debug.Log("Alpha is: " + alphaLevel);
                 }
         }
 
-        IEnumerator FadeOut(GameObject fadeImage){
+        IEnumerator FadeOut(GameObject fadeImage, bool isBlack){
+			int col = 1;
+			if (isBlack){col=0;} else {col=1;} 
+				
                 float alphaLevel = 1;
-                fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                fadeImage.GetComponent<Image>().color = new Color(col, col, col, alphaLevel);
                 for(int i = 0; i < 100; i++){
                         alphaLevel -= 0.01f;
                         yield return null;
-                        fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                        fadeImage.GetComponent<Image>().color = new Color(col, col, col, alphaLevel);
                         Debug.Log("Alpha is: " + alphaLevel);
                 }
         }
