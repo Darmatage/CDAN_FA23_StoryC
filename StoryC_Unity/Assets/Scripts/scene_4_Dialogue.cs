@@ -106,8 +106,8 @@ public void Next(){
 				// Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
-                Choice1a.SetActive(true); // function Choice1aFunct()
-                Choice1b.SetActive(true); // function Choice1bFunct()
+                Choice1a.SetActive(true); // function Choice1aFunct(): "No!"
+                Choice1b.SetActive(true); // function Choice1bFunct(): "Whatever..."
         }
 		
 		
@@ -187,8 +187,8 @@ public void Next(){
 		// Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
-                Choice2a.SetActive(true); // function Choice2aFunct()
-                Choice2b.SetActive(true); // function Choice2bFunct()
+                Choice2a.SetActive(true); // function Choice2aFunct(): "Tell the truth"
+                Choice2b.SetActive(true); // function Choice2bFunct(): "Lie through your teeth"
 		}
 		
 		
@@ -258,7 +258,7 @@ public void Next(){
 				//access scene change button
 				nextButton.SetActive(false);
                 allowSpace = false;
-                NextScene1Button.SetActive(true);
+                NextScene1Button.SetActive(true); // go to rampage scene
         }
 		
 		
@@ -318,8 +318,8 @@ public void Next(){
 				// Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
-                Choice3a.SetActive(true); // function Choice3aFunct()
-                Choice3b.SetActive(true); // function Choice3bFunct()
+                Choice3a.SetActive(true); // function Choice3aFunct(): "It was great..."
+                Choice3b.SetActive(true); // function Choice3bFunct(): "I like Homer's show..."
 		}
 
 
@@ -350,7 +350,7 @@ public void Next(){
 		
 		  else if (primeInt == 73){
                 Char1name.text = "YOU";
-                Char1speech.text = "Huh? I mean, yeah that! Loved it. You really solilo-ed that quy! ";
+                Char1speech.text = "Huh? I mean, yeah that! Loved it. You really solilo-kweeed that quy! ";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
