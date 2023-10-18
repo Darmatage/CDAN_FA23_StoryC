@@ -22,8 +22,9 @@ public class Scene_5_Dialogue : MonoBehaviour {
         public GameObject Choice1b;
 		public GameObject Choice2a;
         public GameObject Choice2b;
-        public GameObject NextScene1Button;
-        public GameObject NextScene2Button;
+        public GameObject NextScene1Button; // graveyard Scene_2
+        public GameObject NextScene2Button; // end win
+		public GameObject NextScene3Button; // rampage at bank Scene_9
         public GameObject nextButton;
        //public AudioSource audioSource;
         private bool allowSpace = true;
@@ -42,6 +43,7 @@ void Start(){
         Choice2b.SetActive(false);
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
+		NextScene3Button.SetActive(false);
         nextButton.SetActive(true);
    }
 
@@ -321,7 +323,7 @@ void Start(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Accountant";
-                Char2speech.text = "There is no conceibale way you chose that option as your employer does not offer anything but a 401k for your retirement account.";
+                Char2speech.text = "There is no conceivable way you chose that option as your employer does not offer anything but a 401k for your retirement account.";
 	
 		}
        else if (primeInt == 47){
@@ -361,12 +363,31 @@ void Start(){
                 Char1name.text = "YOU";
                 Char1speech.text = "Aw jeez this can't be good";
                 Char2name.text = "";
-                Char2speech.text = "";
-				//go to next scene
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene1Button.SetActive(true);	   
+                Char2speech.text = "";   
 	   }
+	   
+	   	else if (primeInt == 52){ 
+                Char1name.text = "YOU";
+                Char1speech.text = "Where would a pissed-off, rampaging accountant ghost go?";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+		
+		else if (primeInt == 53){ 
+                Char1name.text = "YOU";
+                Char1speech.text = "Huh... I think I saw a bank in town on the way here...";
+                Char2name.text = "";
+                Char2speech.text = "";
+				//access scene change button
+				nextButton.SetActive(false);
+                allowSpace = false;
+                NextScene3Button.SetActive(true);
+			if ((GameHandler.metghost1==false)||(GameHandler.metghost2==false)){
+				NextScene1Button.SetActive(true);
+			}
+        }
+	   
+	   
 
 // after choice 2b
        else if (primeInt == 60){
@@ -591,12 +612,16 @@ void Start(){
                 allowSpace = true;
         }
 
-	public void SceneChange1(){
+	public void SceneChange1(){ //back to graveyard
 		SceneManager.LoadScene("Scene_2");
 	}
 	
 	public void SceneChange2(){
 		SceneManager.LoadScene("End_Win");
+	}
+	
+	public void SceneChange3(){ // rampage!
+		SceneManager.LoadScene("Scene_9");
 	}
 	
 	

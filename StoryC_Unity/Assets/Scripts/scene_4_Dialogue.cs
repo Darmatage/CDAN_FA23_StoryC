@@ -27,6 +27,7 @@ public class scene_4_Dialogue : MonoBehaviour {
         public GameObject Choice3b;
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
+		public GameObject NextScene3Button;
         public GameObject nextButton;
        //public AudioSource audioSource;
         private bool allowSpace = true;
@@ -50,6 +51,7 @@ void Start(){
         Choice3b.SetActive(false);
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
+		NextScene3Button.SetActive(false);
         nextButton.SetActive(true);
    }
 
@@ -278,10 +280,7 @@ public void Next(){
                 Char1speech.text = "oh shit";
                 Char2name.text = "";
                 Char2speech.text = "";
-				//access scene change button
-				nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene1Button.SetActive(true); // go to rampage scene
+				primeInt = 90;
         }
 		
 		
@@ -388,7 +387,18 @@ public void Next(){
 			//access scene change button
 				nextButton.SetActive(false);
                 allowSpace = false;
-                NextScene2Button.SetActive(true); // whew! Who's next?
+               // NextScene2Button.SetActive(true); // whew! Who's next?
+				
+			if ((GameHandler.ghost1happy == false)||(GameHandler.ghost2happy == false)){		
+                Char1speech.text = "On to the next ghost!";
+                NextScene2Button.SetActive(true);// go to Scene_2 graveyard
+			} else {
+				Char1speech.text = "Wow! All three ghosts are happy! Guess I'll call it a a night.";
+                NextScene3Button.SetActive(true);// go to win condition
+			}  	
+				
+				
+				
 		}
 		
 		
@@ -481,10 +491,27 @@ public void Next(){
                 Char1speech.text = "Crap. I should have lied.. why I am so honest?";
                 Char2name.text = "";
                 Char2speech.text = "";
+        }
+		
+		else if (primeInt == 91){ 
+                Char1name.text = "YOU";
+                Char1speech.text = "Where would a disgruntled, rampaging thespian ghost go?";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+		
+		else if (primeInt == 92){ 
+                Char1name.text = "YOU";
+                Char1speech.text = "Hmmm... I think I spotted a theater in town on the way here...";
+                Char2name.text = "";
+                Char2speech.text = "";
 				//access scene change button
 				nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene1Button.SetActive(true);
+			if ((GameHandler.metghost1==false)||(GameHandler.metghost3==false)){
+				NextScene2Button.SetActive(true);
+			}
         }
 		
 
@@ -562,10 +589,14 @@ public void Next(){
 
 		
         public void SceneChange1(){//actor ghost rampage scene
-               SceneManager.LoadScene("Scene6");
+               SceneManager.LoadScene("Scene7");
         }
-        public void SceneChange2(){//succeed in calming the ghost
-                SceneManager.LoadScene("Scene2");
+        public void SceneChange2(){//succeed in calming the ghost, go to graveyard
+                SceneManager.LoadScene("Scene_2");
+        }
+		
+		public void SceneChange3(){//all ghosts calm, End Win
+                SceneManager.LoadScene("End_Win");
         }
 		
 		
