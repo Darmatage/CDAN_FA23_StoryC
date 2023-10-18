@@ -257,7 +257,6 @@ MonoBehaviour:
   Choice1a: {fileID: 387660903}
   Choice1b: {fileID: 255437529}
   NextScene1Button: {fileID: 768506776}
-  NextScene2Button: {fileID: 0}
   nextButton: {fileID: 216175409}
 --- !u!1 &216175409 stripped
 GameObject:
@@ -338,11 +337,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 339053558875496166, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 62
       objectReference: {fileID: 0}
     - target: {fileID: 339053558875496166, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -325
       objectReference: {fileID: 0}
     - target: {fileID: 339053558875496166, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -359,6 +358,26 @@ PrefabInstance:
     - target: {fileID: 3437854162159218656, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_Name
       value: Button_StoryChoice1b
+      objectReference: {fileID: 0}
+    - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 106014561}
+    - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Choice1bFunct
+      objectReference: {fileID: 0}
+    - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Scene1Dialogue, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263072024190365967, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
+      propertyPath: m_Text
+      value: Is it Haunted?
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -449,11 +468,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 339053558875496166, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -403
       objectReference: {fileID: 0}
     - target: {fileID: 339053558875496166, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -325
       objectReference: {fileID: 0}
     - target: {fileID: 339053558875496166, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -470,6 +489,26 @@ PrefabInstance:
     - target: {fileID: 3437854162159218656, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_Name
       value: Button_StoryChoice1a
+      objectReference: {fileID: 0}
+    - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 106014561}
+    - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Choice1aFunct
+      objectReference: {fileID: 0}
+    - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Scene1Dialogue, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263072024190365967, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
+      propertyPath: m_Text
+      value: Yes, Sir!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -895,6 +934,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_SceneChange1
       objectReference: {fileID: 0}
+    - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 106014561}
+    - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SceneChange1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Scene1Dialogue, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263072024190365967, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
+      propertyPath: m_Text
+      value: GO CLEAN
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -948,7 +1007,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d18f761f8a00bb64780851b979335d09, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3ca50311acbab1e469b2025f36ed8206, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -983,7 +1042,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 255, y: 0}
   m_SizeDelta: {x: 1280, y: 720}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1196928678

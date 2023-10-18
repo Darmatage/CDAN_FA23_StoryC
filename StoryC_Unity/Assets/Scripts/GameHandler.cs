@@ -11,7 +11,13 @@ public class GameHandler : MonoBehaviour {
         public static bool metghost2 = false; //YOu have met ghost2, actor (introduced Scene_4)
         public static bool metghost3 = false; //YOu have met ghost3, businessman (introduced Scene_5)
 		
-        public static int playerStatA; //
+		public static bool ghost1happy = false;
+		public static bool ghost2happy = false;
+		public static bool ghost3happy = false;
+		
+		public static bool ghost1rampage = false;
+		public static bool ghost2rampage = false;
+		public static bool ghost3rampage = false;
 		
         public static bool GameisPaused = false;
         public GameObject pauseMenuUI;

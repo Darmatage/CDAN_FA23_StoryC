@@ -53,90 +53,141 @@ public void Next(){
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-                ArtChar1a.SetActive(true);
+               
                 DialogueDisplay.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Wakey wakey, human.";
-        }
-       else if (primeInt ==3){
                 Char1name.text = "YOU";
-                Char1speech.text = "Wuh..? What happened?";
+                Char1speech.text = "Hello? Who is this?";
                 Char2name.text = "";
                 Char2speech.text = "";
+        }
+       else if (primeInt ==3){
+		    ArtChar1a.SetActive(true);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Boss";
+                Char2speech.text = "Hello are you the new guy? You at the graveyard yet?";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "I know I did not hit you that hard.";
-        }
-       else if (primeInt == 5){
                 Char1name.text = "YOU";
-                Char1speech.text = "Hit me? Why?";
+                Char1speech.text = "Yeah, I am at the graveyard. \nIs there anybody I am supposed to talk to?";
                 Char2name.text = "";
                 Char2speech.text = "";
+        }
+       else if (primeInt == 5){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Boss";
+                Char2speech.text = "The only one you gonna be talking to is me, pal";
         }
        else if (primeInt == 6){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "I am searching for a fugitive. Ragu Fahn.";
+                Char2name.text = "Boss";
+                Char2speech.text = "All you need to know is that I pay you.";
         }
        else if (primeInt ==7){
                 Char1name.text = "YOU";
-                Char1speech.text = "Why do you think I know anything?";
+                Char1speech.text = "This graveyard is a mess dude!";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-       else if (primeInt == 8){
+		  else if (primeInt ==8){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Do not play the stupid. You will take me to him.";
-                // Turn off "Next" button, turn on "Choice" buttons
+                Char2name.text = "Boss";
+                Char2speech.text = "Yeah which why we hired you dummy, go clean";
+        }
+		  else if (primeInt ==9){
+                Char1name.text = "YOU";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+				// Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
-                Choice1a.SetActive(true); // function Choice1aFunct()
-                Choice1b.SetActive(true); // function Choice1bFunct()
+                Choice1a.SetActive(true); // function Choice1aFunct()  Yes, sir.
+                Choice1b.SetActive(true); // function Choice1bFunct()  Isn't it haunted?
         }
-
-       // after choice 1a
+		
+		
+		// after choice 1a
        else if (primeInt == 20){
-                //gameHandler.AddPlayerStat(1);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Then you are no use to me, and must be silenced.";
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "Boss";
+			Char2speech.text = "Tools in the shed. \nKeep your eyes open. \nDon't break my tools.";
         }
        else if (primeInt == 21){
+			Char1name.text = "YOU";
+			Char1speech.text = "OK, um, if I have a questions, should I...";
+			Char2name.text = "";
+			Char2speech.text = "";
+			primeInt = 39;
+        } 
+
+
+       // after choice 1b
+        else if (primeInt ==30){
+                Char1name.text = "YOU";
+                Char1speech.text = "We never discussed my hazard pay. \nI mean I've heard this place is haunted...";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+		  else if (primeInt ==31){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Come back here! Do not think you can hide from me!";
+                Char2name.text = "Boss";
+                Char2speech.text = "Well dont worry about that, kiddo. \nJust keep the place clean and you won't have any, uh... 'problems' hehe";
+        }
+		
+		  else if (primeInt ==32){
+                Char1name.text = "YOU";
+                Char1speech.text = "What does that mean?";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+		  else if (primeInt ==33){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Boss";
+                Char2speech.text = "Look, just try not to cause trouble.";
+        }
+		 else if (primeInt ==34){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Boss";
+                Char2speech.text = "Folks here like their dead resting peacefully, if you know what I mean";
+        }
+		 else if (primeInt ==35){
+                Char1name.text = "YOU";
+                Char1speech.text = "Wait what do you mean, 'peacefully'?";
+                Char2name.text = "";
+                Char2speech.text = "";
+				primeInt = 39;
+        }
+	   
+	   
+	   //scene ends		 
+	   else if (primeInt ==40){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Boss";
+                Char2speech.text = "Just get to work, kid. I gotta go.";
+      
+        }
+		
+       else if (primeInt == 41){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Boss";
+                Char2speech.text = "Thirsty Thursday aint gonna get itself started eh? \nHehehehehe *click*";
+                // Go to next scene
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene1Button.SetActive(true);
         }
-
-       // after choice 1b
-       else if (primeInt == 30){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Do not think you can fool me, human. Where will we find him?";
-        }
-       else if (primeInt == 31){
-                Char1name.text = "YOU";
-                Char1speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
-                Char2name.text = "";
-                Char2speech.text = "";
-                nextButton.SetActive(false);
-                allowSpace = false;
-                //NextScene2Button.SetActive(true);
-        }
+	   
 
       //Please do NOT delete this final bracket that ends the Next() function:
      }
@@ -144,7 +195,7 @@ public void Next(){
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "I don't know what you're talking about!";
+                Char1speech.text = "Yes, sir, you are in good hands!";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 19;
@@ -155,7 +206,7 @@ public void Next(){
         }
         public void Choice1bFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "Sure, anything you want... just lay off the club.";
+                Char1speech.text = "Hold on a minute.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 29;
@@ -166,7 +217,7 @@ public void Next(){
         }
 
         public void SceneChange1(){
-               SceneManager.LoadScene("Scene2");
+               SceneManager.LoadScene("Scene_2");
         }
         //public void SceneChange2(){
         //        SceneManager.LoadScene("Scene2b");
