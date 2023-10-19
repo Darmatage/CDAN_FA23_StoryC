@@ -68,7 +68,7 @@ public void Next(){
         primeInt = primeInt + 1;
         if (primeInt == 1){
                 // AudioSource.Play();
-        xxxxx}
+       }
        else if (primeInt == 3){
                 Char1name.text = "YOU";
                 Char1speech.text = "Oh shit I gotta get this under control, or im fucking toast!";
