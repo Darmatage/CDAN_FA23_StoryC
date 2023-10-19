@@ -81,7 +81,7 @@ void Start(){
 		   ArtChar1b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "Don’t mind the mess, it gets a little crazy here sometimes.";
                 //gameHandler.AddPlayerStat(1);
         }
@@ -96,7 +96,7 @@ void Start(){
 		   ArtChar1a.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "I'm a bit of a party animal if you couldn't tell.";
         }
        else if (primeInt == 6){
@@ -110,7 +110,7 @@ void Start(){
 		   ArtChar1a.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "Anyways, I've taken the liberty of looking at your employer's finances and I must say I am quite intrested";
 		}
        else if (primeInt == 8){
@@ -122,7 +122,7 @@ void Start(){
        else if (primeInt == 9){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
             Char2speech.text = "It seems that your employer is fudging the books a little, if you know what I mean.";
 	   }
        else if (primeInt == 10){
@@ -134,7 +134,7 @@ void Start(){
        else if (primeInt == 11){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "Oh no, you're a simpleton. That explains your paystub";
 	  }
        else if (primeInt == 12){
@@ -146,7 +146,7 @@ void Start(){
        else if (primeInt == 13){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "Tell me, rube, have you claimed that uniforma you're wearing as a business related expense in your most recent tax submission?";
                 // Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
@@ -163,7 +163,7 @@ void Start(){
 		   ArtChar1c.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "Oh really?";
         }
        else if (primeInt == 21){
@@ -175,7 +175,7 @@ void Start(){
        else if (primeInt == 22){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "Proof of pruchase? Credit card statemen? From 32-C-A_54:CRT?";      
 	    }
        else if (primeInt == 23){
@@ -187,7 +187,7 @@ void Start(){
        else if (primeInt == 24){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "Oh really? Well then tell me this: For Section A of Form 32-C-A_54:CRT, did you list your Retirement account as a Roth IRA or a 401k?";
 	  }
 	    else if (primeInt == 25){
@@ -209,7 +209,7 @@ void Start(){
 		   ArtChar1c.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "I thought as much. One look at those glassy, empty eyes told me everything I needed to know.";
         }
        else if (primeInt == 31){
@@ -225,7 +225,7 @@ void Start(){
 		    ArtChar1c.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "Silnce. I'm working";		
         }
        else if (primeInt == 33){
@@ -240,7 +240,7 @@ void Start(){
 		    ArtChar1c.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "There, I’ve added all the relevant information to your tax statement in an addendum.";
 				 }
        else if (primeInt == 35){
@@ -249,7 +249,7 @@ void Start(){
 		    ArtChar1c.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "You need to make sure you catch these kinds of things next time";
 				 }
        else if (primeInt == 36){
@@ -270,7 +270,7 @@ void Start(){
 		    ArtChar1c.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "Indeed, Now please don't bother me again, I am a veyr busy man.";
 				primeInt = 99;
 	   }
@@ -283,7 +283,7 @@ void Start(){
 		    ArtChar1c.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "You mean Roth IRA";
         }
        else if (primeInt == 41){
@@ -295,7 +295,7 @@ void Start(){
        else if (primeInt == 42){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "And you are quite sure of this?";
 
         }
@@ -309,7 +309,7 @@ void Start(){
        else if (primeInt == 44){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "Well then thats certainly intresting to hear";
 			
 	 }
@@ -322,7 +322,7 @@ void Start(){
        else if (primeInt == 46){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "There is no conceivable way you chose that option as your employer does not offer anything but a 401k for your retirement account.";
 	
 		}
@@ -338,7 +338,7 @@ void Start(){
 		    ArtChar1c.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "You are lying to me! You think you can deceive me?";
 	    }
        else if (primeInt == 49){
@@ -350,7 +350,7 @@ void Start(){
        else if (primeInt == 50){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "I have a quadruple-digit IQ, how dare you insult me by trying to trick my superior mind!";
 		}
        else if (primeInt == 51){
@@ -396,7 +396,7 @@ void Start(){
 		    ArtChar1c.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "Is that so?";
         }
        else if (primeInt == 61){
@@ -408,7 +408,7 @@ void Start(){
        else if (primeInt == 62){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "You are certain that was your choice?";		
         }
        else if (primeInt == 63){
@@ -421,7 +421,7 @@ void Start(){
        else if (primeInt == 64){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "That's very interesting to hear..";
 			
 		}
@@ -434,7 +434,7 @@ void Start(){
        else if (primeInt == 66){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "Well....";
 		 }
        else if (primeInt == 67){
@@ -449,13 +449,13 @@ void Start(){
 		    ArtChar1c.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "Well it is interesting because that is correct...";
 	    }
        else if (primeInt == 69){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "...I was convinced you were attempting to use that smooth lump you call a brain to trick me but it seems I was wrong";
 	    }
        else if (primeInt == 70){
@@ -470,7 +470,7 @@ void Start(){
 		    ArtChar1c.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "Its no matter. I misjudged you, I apologize";
 		}
        else if (primeInt == 72){
@@ -482,7 +482,7 @@ void Start(){
        else if (primeInt == 73){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "Now to conclude our business: your bill.";
 		  }
        else if (primeInt == 74){
@@ -494,13 +494,13 @@ void Start(){
        else if (primeInt == 75){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "You will find that I have given you quite a reasonable rate for my services.";
 		}
        else if (primeInt == 76){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "As you can see the final total is at the bottom.";
 		}
        else if (primeInt == 77){
@@ -512,7 +512,7 @@ void Start(){
        else if (primeInt == 78){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "Turn it upside down";
 				  }
        else if (primeInt == 79){
@@ -527,7 +527,7 @@ void Start(){
 		    ArtChar1c.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Accountant";
+                Char2name.text = "Ghost Accountant";
                 Char2speech.text = "we like to have fun around here";
 				 }
        else if (primeInt == 81){

@@ -87,13 +87,13 @@ public void Next(){
 		   ArtChar1b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "ACTOR";
+                Char2name.text = "Ghost Actor";
                 Char2speech.text = "Why yes!You are at the the-at-er!";
         }
 		else if (primeInt == 4){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "ACTOR";
+                Char2name.text = "Ghost Actor";
                 Char2speech.text = "My home! The place where I create and influence!";
         }
        else if (primeInt == 5){
@@ -107,7 +107,7 @@ public void Next(){
        else if (primeInt == 6){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Actor";
+                Char2name.text = "Ghost Actor";
                 Char2speech.text = "Now just sit back and relax while I regale you of the story of the Illiad!";
 				
 				// Turn off "Next" button, turn on "Choice" buttons
@@ -139,13 +139,13 @@ public void Next(){
 		else if (primeInt == 22){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "ACTOR";
+                Char2name.text = "Ghost Actor";
                 Char2speech.text = "Yes! And now you sit your scrumptious bottom down in that seat...";
         }
 		else if (primeInt == 23){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "ACTOR";
+                Char2name.text = "Ghost Actor";
                 Char2speech.text = "...and gaze in astonishment as I conjure Homer’s creation before your eyes!";
         }
        else if (primeInt == 24){
@@ -165,7 +165,7 @@ public void Next(){
 		   ArtChar1b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "ACTOR";
+                Char2name.text = "Ghost Actor";
                 Char2speech.text = "Splendid! \nLet us begin!";
 	   }
        else if (primeInt == 31){
@@ -187,13 +187,13 @@ public void Next(){
         //BlackFade.SetActive(false);
 			Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "ACTOR";
+            Char2name.text = "Ghost Actor";
             Char2speech.text = "So, now you’ve witnessed my talent on display! What do you think?";
         }
        else if (primeInt == 41){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "ACTOR";
+                Char2name.text = "Ghost Actor";
                 Char2speech.text = "Phenomenal, right? I can tell by your face I've completely amazed you!";
 		// Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
@@ -217,7 +217,7 @@ public void Next(){
 		   ArtChar1b.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "ACTOR";
+                Char2name.text = "Ghost Actor";
                 Char2speech.text = "...What? No, it can't be. \nYou loved it, you know you did!";
 	   } 
        else if (primeInt == 52){
@@ -230,7 +230,7 @@ public void Next(){
 		  else if (primeInt == 53){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "ACTOR";
+                Char2name.text = "Ghost Actor";
                 Char2speech.text = "How dare you! Why do you lie like so!";
 				
         }
@@ -246,20 +246,20 @@ public void Next(){
 			  ArtChar1c.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "ACTOR";
+                Char2name.text = "Ghost Actor";
                 Char2speech.text = "I won't hear anymore of your lies! \nI lived my whole life on the stage! Hell...";
 				
         }
 		  else if (primeInt == 56){ 
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "ACTOR";
+                Char2name.text = "Ghost Actor";
                 Char2speech.text = "...I even died on it! \nPerforming the very heart-wrenching play I just did for you!";
         }
 		 else if (primeInt == 57){ 
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "ACTOR";
+                Char2name.text = "Ghost Actor";
                 Char2speech.text = "I think the town would be very grateful to see my performance instead";
         }
 		 else if (primeInt == 58){ //fade
@@ -292,7 +292,7 @@ public void Next(){
 		   ArtChar1b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "ACTOR";
+                Char2name.text = "Ghost Actor";
                 Char2speech.text = "Oh I knew it! Even after all these years stuck in the underworld I still have the gift!";
 	   } 
 	     else if (primeInt == 61){
@@ -304,7 +304,7 @@ public void Next(){
 	     else if (primeInt == 62){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "ACTOR";
+                Char2name.text = "Ghost Actor";
                 Char2speech.text = "This is just splendid, absolutely splendid!";
 	   } 
 	     else if (primeInt == 63){
@@ -316,7 +316,7 @@ public void Next(){
 	     else if (primeInt == 64){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "ACTOR";
+                Char2name.text = "Ghost Actor";
                 Char2speech.text = "Oh you must tell me you must!";
 	   } 
 	     else if (primeInt == 65){
@@ -328,7 +328,7 @@ public void Next(){
 	     else if (primeInt == 66){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "ACTOR";
+                Char2name.text = "Ghost Actor";
                 Char2speech.text = "What your favorite part was! \nWhat did you love about my show?";
 	   } 
 	     else if (primeInt == 67){
@@ -351,7 +351,7 @@ public void Next(){
        else if (primeInt == 70){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "ACTOR";
+                Char2name.text = "Ghost Actor";
                 Char2speech.text = "What about it? Yes?";
         }
 		
@@ -365,7 +365,7 @@ public void Next(){
 		  else if (primeInt == 72){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "ACTOR";
+                Char2name.text = "Ghost Actor";
                 Char2speech.text = "Oh please tell me, please!";
         }
 		
@@ -379,7 +379,7 @@ public void Next(){
 		  else if (primeInt == 74){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "ACTOR";
+                Char2name.text = "Ghost Actor";
                 Char2speech.text = "I knew I still have my gift! \nOh thank you for your brave honesty!";
         	
 			GameHandler.ghost2happy = true;	
@@ -412,7 +412,7 @@ public void Next(){
 		   ArtChar1a.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "ACTOR";
+                Char2name.text = "Ghost Actor";
                 Char2speech.text = "...";
         }
 		   else if (primeInt == 81){
@@ -425,7 +425,7 @@ public void Next(){
 		   else if (primeInt == 82){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "ACTOR";
+                Char2name.text = "Ghost Actor";
                 Char2speech.text = "...";
         }
 		
@@ -441,7 +441,7 @@ public void Next(){
 			   ArtChar1c.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Actor";
+                Char2name.text = "Ghost Actor";
                 Char2speech.text = "HOMER IS THE AUTHOR, YOU IMPUDENT WRETCH!";
         }
 		
@@ -455,7 +455,7 @@ public void Next(){
 		   else if (primeInt == 86){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "ACTOR";
+                Char2name.text = "Ghost Actor";
                 Char2speech.text = "YOU DIDNT PAY ATTENTION, DID YOU?!";
         }
 		
@@ -469,7 +469,7 @@ public void Next(){
 		   else if (primeInt == 88){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "ACTOR";
+                Char2name.text = "Ghost Actor";
                 Char2speech.text = "HOW DARE YOU INSULT ME LIKE THIS? I WILL BRING MY TALENTS TO THE TOWN!";   
 		}
 
