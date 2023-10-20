@@ -55,96 +55,176 @@ public void Next(){
         else if (primeInt == 2){
                 ArtChar1a.SetActive(true);
                 DialogueDisplay.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
+                Char1name.text = "YOU";
+                Char1speech.text = "So, this is where your family lives now huh? Kinda empty";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt ==3){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char2name.text = "Ghost Accountant";
+                Char2speech.text = "Things must've been hard for my family if they live here";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
-                Char1name.text = "";
-                Char1speech.text = "";
+                Char1name.text = "Lyda";
+                Char1speech.text = "AHHH!";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 5){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char2name.text = "YOU";
+                Char2speech.text = "AHH!!!!";
         }
        else if (primeInt == 6){
-                Char1name.text = "";
+                Char1name.text = "Lydia: Who are you?! How did you get into my house?!";
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
-        }
-       else if (primeInt ==7){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 8){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                // Turn off "Next" button, turn on "Choice" buttons
+     // Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
-                Choice1a.SetActive(true); // function Choice1aFunct()
-                Choice1b.SetActive(true); // function Choice1bFunct()
-        }
+                Choice1a.SetActive(true); // function Choice1aFunct(Jerry told me you lived here!)
+                Choice1b.SetActive(true); // function Choice1bFunct(Your husband is here to see you!)
+	   }
 
        // after choice 1a
        else if (primeInt == 20){
                 //gameHandler.AddPlayerStat(1);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "T";
+                Char2name.text = "Lydia";
+                Char2speech.text = "What? Why would he tell you that?!";
+				
         }
-       else if (primeInt == 21){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Come back here! Do not think you can hide from me!";
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene1Button.SetActive(true);
-        }
-
-       // after choice 1b
-       else if (primeInt == 30){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Do not think you can fool me, human. Where will we find him?";
-        }
-       else if (primeInt == 31){
+		  else if (primeInt == 21){
                 Char1name.text = "YOU";
-                Char1speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
+                Char1speech.text = "He wanted me to give you something?";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+		else if (primeInt == 22){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Lydia";
+                Char2speech.text = "I don't trust you. Now get out my house!!";
+        }
+	
+       else if (primeInt == 25){
+                Char1name.text = "YOU";
+                Char1speech.text = "NOT THE FACE!";
                 Char2name.text = "";
                 Char2speech.text = "";
                 nextButton.SetActive(false);
                 allowSpace = false;
+                NextScene1Button.SetActive(true);
+        }
+//bad ending ^^^^
+       // after choice 1b
+       else if (primeInt == 30){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Ghost Accountant";
+                Char2speech.text = "Lydia, it's me, Michael";
+        }
+		else if (primeInt == 31){
+                Char1name.text = "Lydia";
+                Char1speech.text = "Is it really... you?";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+		else if (primeInt == 32){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Ghost Accountant";
+                Char2speech.text = "I'm the same boring accountant you still married all those years ago";
+        }
+		else if (primeInt == 33){
+                Char1name.text = "Lydia";
+                Char1speech.text = "It's been so hard without you, Mitch. Not just with money. I've been so alone.";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+		else if (primeInt == 34){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Ghost Accountant";
+                Char2speech.text = "I didn't mean to leave you like this. I should have stayed home that day";
+        }
+		else if (primeInt == 35){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Ghost Accountant";
+                Char2speech.text = "If I had, the car crash would have never happened and I'd still be alive.";
+        }
+		else if (primeInt == 36){
+                Char1name.text = "Lydia";
+                Char1speech.text = "I don't blame you sweetie. You were just trying to provide for us.";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+		else if (primeInt == 37){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Jr";
+                Char2speech.text = "Mom... W-who is that man in our-";
+        }
+		else if (primeInt == 38){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Jr";
+                Char2speech.text = "Daddy?";
+        }
+		else if (primeInt == 39){
+                Char1name.text = "Ghost Accountant";
+                Char1speech.text = "Jr?!";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+		else if (primeInt == 40){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Jr";
+                Char2speech.text = "Dad! What happened to you?";
+        }
+		else if (primeInt == 41){
+                Char1name.text = "Ghost Accountant";
+                Char1speech.text = "I've passed away son, son. But this kid over here gave me a chance to see you again.";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+		else if (primeInt == 42){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Lydia";
+                Char2speech.text = "I'm just glad we saw you again Michael.";
+        }
+		else if (primeInt == 43){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "YOU";
+                Char2speech.text = "Okay, Will you coe back to the Graveyard?";
+        }
+       else if (primeInt == 44){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Ghost Accountant";
+                Char2speech.text = "Yeah kid. Sorry for the rouble. I can rest now";
+                nextButton.SetActive(false);
+                allowSpace = false;
                 NextScene2Button.SetActive(true);
         }
-
+//^^^ good ending
       //Please do NOT delete this final bracket that ends the Next() function:
      }
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "I don't know what you're talking about!";
+                Char1speech.text = "Jerry told me you lived here!";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 19;
@@ -155,7 +235,7 @@ public void Next(){
         }
         public void Choice1bFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "Sure, anything you want... just lay off the club.";
+                Char1speech.text = "Your husband is here to see you!";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 29;
