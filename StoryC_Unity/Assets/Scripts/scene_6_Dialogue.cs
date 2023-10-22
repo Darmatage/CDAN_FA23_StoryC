@@ -5,18 +5,25 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class scene_3_Dialogue : MonoBehaviour {
+public class scene_6_Dialogue : MonoBehaviour {
         public int primeInt = 1;         // This integer drives game progress!
         public Text Char1name;
         public Text Char1speech;
         public Text Char2name;
         public Text Char2speech;
-       //public Text Char3name;
-       //public Text Char3speech;
-        public GameObject DialogueDisplay;
-        public GameObject ArtChar1a; //happy
-       public GameObject ArtChar1b; //talking
-       public GameObject ArtChar1c; //mad
+       public Text Char3name;
+       public Text Char3speech;
+	public GameObject DialogueDisplay;
+	public GameObject ArtChar1a; //fury
+	public GameObject ArtChar1b; //mad
+	public GameObject ArtChar1c; //talking
+	public GameObject ArtChar1d; //happy
+	   
+	public GameObject ArtChar2; //farmer 1
+	public GameObject ArtChar3; //famer 2
+	public GameObject ArtChar4; //farmer 3
+	public GameObject ArtChar5; //famer 4
+	public GameObject ArtChar6; //famer 5	
 	   
         public GameObject ArtBG1;
         public GameObject Choice1a;
@@ -68,26 +75,31 @@ public void Next(){
         if (primeInt == 1){
                 // AudioSource.Play();
         }
-        else if (primeInt == 2){
+	else if (primeInt == 2){
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "Where the hell are we? Where's the graveyard?”";
                 Char2name.text = " ";
                 Char2speech.text = " ";
-        }
+		Char3name.text = " ";
+		Char3speech.text = " ";
+	}
        else if (primeInt == 3){
 		   ArtChar1b.SetActive(true);
                 Char1name.text = " ";
                 Char1speech.text = " ";
                 Char2name.text = "Ghost Farmer";
                 Char2speech.text = "This here is my farm, boy, or what's left of it anyhow. ";
-                //gameHandler.AddPlayerStat(1);
+			Char3name.text = " ";
+			Char3speech.text = " ";
         }
        else if (primeInt == 4){
                 Char1name.text = "YOU";
                 Char1speech.text = " Whats that smell?";
                 Char2name.text = " ";
                 Char2speech.text = " ";
+			Char3name.text = " ";
+			Char3speech.text = " ";
         }
        else if (primeInt == 5){
 		   ArtChar1b.SetActive(false);
@@ -96,12 +108,16 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "Ghost Farmer";
                 Char2speech.text = "Brimstone and sulfur, I assume.";
+			Char3name.text = " ";
+			Char3speech.text = " ";
         }
        else if (primeInt == 6){
                 Char1name.text = "YOU";
                 Char1speech.text = "Thats disgusting! I can barely breathe!";
                 Char2name.text = "";
                 Char2speech.text = "";
+			Char3name.text = " ";
+			Char3speech.text = " ";
         }
        else if (primeInt == 7){
 		   ArtChar1a.SetActive(false);
@@ -537,6 +553,8 @@ public void Next(){
                 Char1speech.text = "How did you die?";
                 Char2name.text = "";
                 Char2speech.text = "";
+				Char3name.text = " ";
+				Char3speech.text = " ";
                 primeInt = 19;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
@@ -548,6 +566,9 @@ public void Next(){
                 Char1speech.text = "What do you mean?";
                 Char2name.text = "";
                 Char2speech.text = "";
+				Char3name.text = " ";
+				Char3speech.text = " ";
+				
                 primeInt = 29;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
@@ -559,46 +580,63 @@ public void Next(){
                 Char1speech.text = "I never liked turnips anyways.";
                 Char2name.text = "";
                 Char2speech.text = "";
+				Char3name.text = " ";
+				Char3speech.text = " ";	
+			
                 primeInt = 39;
                 Choice2a.SetActive(false);
                 Choice2b.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
-        }public void Choice2bFunct(){
+        }
+		
+		public void Choice2bFunct(){
                 Char1name.text = "YOU";
                 Char1speech.text = "What about your family? Are they here with you?";
                 Char2name.text = "";
                 Char2speech.text = "";
+				Char3name.text = " ";
+				Char3speech.text = " ";	
+				
                 primeInt = 49;
                 Choice2a.SetActive(false);
                 Choice2b.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
 		}
-				public void Choice3aFunct(){
+		
+		public void Choice3aFunct(){
                 Char1name.text = "YOU";
                 Char1speech.text = "How could you be so selfish? Did you even think about your family when you were throwing their lives away with your own?";
                 Char2name.text = "";
                 Char2speech.text = "";
+				Char3name.text = " ";
+				Char3speech.text = " ";		
+				
                 primeInt = 69;
                 Choice3a.SetActive(false);
                 Choice3b.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
-        public void Choice3bFunct(){
+        
+		public void Choice3bFunct(){
                 Char1name.text = "YOU";
                 Char1speech.text = "Don't be so hard on yourself, it wasn't entirely your fault.";
                 Char2name.text = "";
                 Char2speech.text = "";
+				Char3name.text = " ";
+				Char3speech.text = " ";
+				
                 primeInt = 79;
                 Choice3a.SetActive(false);
                 Choice3b.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
+		
         public void SceneChange1(){ // rampage!
-               SceneManager.LoadScene("scene_6");
+               SceneManager.LoadScene("End_Lose1_Farmer");
         }
         public void SceneChange2(){ // back to graveyard
                 SceneManager.LoadScene("scene_2");
