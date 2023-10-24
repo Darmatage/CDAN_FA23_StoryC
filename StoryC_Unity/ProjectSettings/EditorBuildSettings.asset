@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/End_Lose3_Accountant.unity
     guid: 7dd052e5385401d40993c860a562a183
+  - enabled: 1
+    path: Assets/Scenes/scene_10.unity
+    guid: 1e4f13d5c67666245a68213a71bd534b
   m_configObjects: {}
