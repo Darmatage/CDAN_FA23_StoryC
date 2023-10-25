@@ -139,12 +139,12 @@ public void Next(){
         ArtChar1a.SetActive(false);
         ArtChar2a.SetActive(false);
         ArtChar3a.SetActive(true);
-                Char1name.text = "";
+                Char1name.text = "YOU";
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
                 // Turn off "Next" button, turn on "Choice" buttons
-                nextButton.SetActive(true);
+                nextButton.SetActive(false);
                 allowSpace = false;
                 Choice1a.SetActive(true); // function Choice1aFunct() Shut up!
                 Choice1b.SetActive(true); // function Choice1bFunct() OK, I will help
