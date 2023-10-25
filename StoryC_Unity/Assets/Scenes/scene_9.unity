@@ -533,14 +533,14 @@ PrefabInstance:
     - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 106014561}
     - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Choice2aFunct
       objectReference: {fileID: 0}
     - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scene_5_Dialogue, Assembly-CSharp
+      value: scene_9_Dialogue, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -730,14 +730,14 @@ PrefabInstance:
     - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 106014561}
     - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Choice1bFunct
       objectReference: {fileID: 0}
     - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scene_5_Dialogue, Assembly-CSharp
+      value: scene_9_Dialogue, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -867,14 +867,14 @@ PrefabInstance:
     - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 106014561}
     - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Choice2bFunct
       objectReference: {fileID: 0}
     - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scene_5_Dialogue, Assembly-CSharp
+      value: scene_9_Dialogue, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1112,14 +1112,14 @@ PrefabInstance:
     - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 106014561}
     - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SceneChange2
       objectReference: {fileID: 0}
     - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scene_5_Dialogue, Assembly-CSharp
+      value: scene_9_Dialogue, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1208,7 +1208,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7109b4f0f8ba7294b8b07796c874abbc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 07efd605472cb7c428522074e0ddbb39, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1888,14 +1888,14 @@ PrefabInstance:
     - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 106014561}
     - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Choice1aFunct
       objectReference: {fileID: 0}
     - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scene_5_Dialogue, Assembly-CSharp
+      value: scene_9_Dialogue, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -2246,14 +2246,14 @@ PrefabInstance:
     - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 106014561}
     - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SceneChange1
       objectReference: {fileID: 0}
     - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scene_5_Dialogue, Assembly-CSharp
+      value: scene_9_Dialogue, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7175288611486005899, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName

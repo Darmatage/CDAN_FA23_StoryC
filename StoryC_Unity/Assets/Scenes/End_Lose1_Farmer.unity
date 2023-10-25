@@ -275,6 +275,89 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 344ac31cf09d6eb41ae970089fb26607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &362241237
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 362241238}
+  - component: {fileID: 362241240}
+  - component: {fileID: 362241239}
+  m_Layer: 5
+  m_Name: Text explain (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &362241238
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362241237}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2073120156}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 418, y: -26.343}
+  m_SizeDelta: {x: 402.0812, y: 470.69}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &362241239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362241237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 45
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 50
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'All the crops in the local community are gone,  everyone starves to death
+    :(
+
+'
+--- !u!222 &362241240
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362241237}
+  m_CullTransparentMesh: 1
 --- !u!1 &718102653
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,8 +746,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 12.331}
-  m_SizeDelta: {x: 721.7545, y: 393.34}
+  m_AnchoredPosition: {x: -404.44904, y: -26.343}
+  m_SizeDelta: {x: 402.0812, y: 470.69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1892912782
 MonoBehaviour:
@@ -693,14 +776,15 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 50
-    m_Alignment: 4
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Oh no! You couldn't stop the Ghost Farmer!\n\nAll the crops in the local
-    community are gone, \neveryone starves to death :(\n"
+  m_Text: 'Oh no! You couldn''t stop the Ghost Farmer!
+
+'
 --- !u!222 &1892912783
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1084,6 +1168,7 @@ RectTransform:
   - {fileID: 31452835}
   - {fileID: 718102654}
   - {fileID: 1892912781}
+  - {fileID: 362241238}
   - {fileID: 1188514772}
   - {fileID: 1912043607}
   - {fileID: 1562459217}

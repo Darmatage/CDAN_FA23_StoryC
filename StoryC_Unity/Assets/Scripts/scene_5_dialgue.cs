@@ -26,7 +26,7 @@ public class Scene_5_Dialogue : MonoBehaviour {
         public GameObject NextScene2Button; // end win
 		public GameObject NextScene3Button; // rampage at bank Scene_9
         public GameObject nextButton;
-       //public AudioSource audioSource;
+       public AudioSource audioSource1;
         private bool allowSpace = true;
 
 // initial visibility settings. Any new images or buttons need to also be SetActive(false);
@@ -147,7 +147,13 @@ void Start(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Accountant";
-                Char2speech.text = "Tell me, rube, have you claimed that uniforma you're wearing as a business related expense in your most recent tax submission?";
+                Char2speech.text = "Tell me, rube, have you claimed that uniform you're wearing?";
+        }
+       else if (primeInt == 14){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Ghost Accountant";
+                Char2speech.text = "As a business-related expense in your most recent tax submission?";
                 // Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -188,9 +194,15 @@ void Start(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Accountant";
-                Char2speech.text = "Oh really? Well then tell me this: For Section A of Form 32-C-A_54:CRT, did you list your Retirement account as a Roth IRA or a 401k?";
+                Char2speech.text = "Oh really? Well then tell me this: For Section A of Form 32-C-A_54:CRT...";
 	  }
-	    else if (primeInt == 25){
+       else if (primeInt == 25){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Ghost Accountant";
+                Char2speech.text = "...did you list your Retirement account as a Roth IRA or a 401k?";
+	  }
+	    else if (primeInt == 26){
                 Char1name.text = "YOU";
                 Char1speech.text = "Ummmmm";
                 Char2name.text = "";
@@ -271,9 +283,29 @@ void Start(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Accountant";
-                Char2speech.text = "Indeed, Now please don't bother me again, I am a veyr busy man.";
-				primeInt = 99;
+                Char2speech.text = "Indeed, Now please don't bother me again, I am a very busy man.";	
 	   }
+	   
+	else if (primeInt == 39){
+		    ArtChar1b.SetActive(false);
+		   ArtChar1a.SetActive(false);
+		    ArtChar1c.SetActive(false);
+                Char1name.text = "YOU";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+			//turn off next	
+			   nextButton.SetActive(false);
+                allowSpace = false;
+			if ((GameHandler.ghost1happy == false)||(GameHandler.ghost2happy == false)){		
+                Char1speech.text = "On to the next ghost!";
+                NextScene1Button.SetActive(true);// go to Scene_2 graveyard
+			} else {
+				Char1speech.text = "Wow! All three ghosts are happy! Guess I'll call it a a night.";
+                NextScene2Button.SetActive(true);// go to win condition
+			}		
+	   }
+	   
 	 
 
 // after choice 2a
@@ -304,7 +336,6 @@ void Start(){
                 Char1speech.text = "Absolutely. No doubt in my mind whatsoever";
                 Char2name.text = "";
                 Char2speech.text = "";
-			
 		 }
        else if (primeInt == 44){
                 Char1name.text = "";
@@ -323,16 +354,23 @@ void Start(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Accountant";
-                Char2speech.text = "There is no conceivable way you chose that option as your employer does not offer anything but a 401k for your retirement account.";
+                Char2speech.text = "There is no conceivable way you chose that option...";
 	
 		}
        else if (primeInt == 47){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Ghost Accountant";
+                Char2speech.text = "...as your employer does not offer anything but a 401k for your retirement account.";
+	
+		}
+       else if (primeInt == 48){
                 Char1name.text = "YOU";
                 Char1speech.text = "nahhh thats crazy I totally put Ruth down";
                 Char2name.text = "";
                 Char2speech.text = "";
 	    }
-       else if (primeInt == 48){
+       else if (primeInt == 49){
 		    ArtChar1b.SetActive(false);
 		   ArtChar1a.SetActive(false);
 		    ArtChar1c.SetActive(true);
@@ -341,19 +379,20 @@ void Start(){
                 Char2name.text = "Ghost Accountant";
                 Char2speech.text = "You are lying to me! You think you can deceive me?";
 	    }
-       else if (primeInt == 49){
+       else if (primeInt == 50){
                 Char1name.text = "YOU";
                 Char1speech.text = "No! Of course not!";
                 Char2name.text = "";
 				Char2speech.text = "";
 	    }
-       else if (primeInt == 50){
+       else if (primeInt == 51){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Accountant";
                 Char2speech.text = "I have a quadruple-digit IQ, how dare you insult me by trying to trick my superior mind!";
 		}
-       else if (primeInt == 51){
+       else if (primeInt == 52){
+		    audioSource1.Play();
 		    ArtChar1a.SetActive(false);
 			ArtChar1b.SetActive(false);
 			ArtChar1c.SetActive(true);
@@ -366,14 +405,14 @@ void Start(){
                 Char2speech.text = "";   
 	   }
 	   
-	   	else if (primeInt == 52){ 
+	   	else if (primeInt == 53){ 
                 Char1name.text = "YOU";
                 Char1speech.text = "Where would a pissed-off, rampaging accountant ghost go?";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
 		
-		else if (primeInt == 53){ 
+		else if (primeInt == 54){ 
                 Char1name.text = "YOU";
                 Char1speech.text = "Huh... I think I saw a bank in town on the way here...";
                 Char2name.text = "";

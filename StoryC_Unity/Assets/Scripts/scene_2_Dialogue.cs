@@ -23,6 +23,11 @@ public class scene_2_Dialogue : MonoBehaviour {
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
         public GameObject NextScene3Button;
+		
+		public GameObject NextScene1_rampage;
+        public GameObject NextScene2_rampage;
+        public GameObject NextScene3_rampage;
+		
         public GameObject nextButton;
        //public AudioSource audioSource;
         private bool allowSpace = true;
@@ -39,6 +44,11 @@ ArtChar2a.SetActive(false);
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         NextScene3Button.SetActive(false);
+		
+		NextScene1_rampage.SetActive(false);
+        NextScene2_rampage.SetActive(false);
+        NextScene3_rampage.SetActive(false);
+		
         nextButton.SetActive(true);
    }
 
@@ -213,14 +223,25 @@ public void Next(){
         }
 
         public void SceneChange1(){
-               SceneManager.LoadScene("Scene2a");
+               SceneManager.LoadScene("scene_3");
         }
         public void SceneChange2(){
-                SceneManager.LoadScene("Scene2b");
+                SceneManager.LoadScene("scene_4");
         }
 
         public void SceneChange3(){
-                SceneManager.LoadScene("Scene2b");
+                SceneManager.LoadScene("scene_5");
+        }
+		
+		 public void SceneChange1_rampage(){
+               SceneManager.LoadScene("scene_6");
+        }
+        public void SceneChange2_rampage(){
+                SceneManager.LoadScene("scene_7");
+        }
+
+        public void SceneChange3_rampage(){
+                SceneManager.LoadScene("scene_9");
         }
 
 }

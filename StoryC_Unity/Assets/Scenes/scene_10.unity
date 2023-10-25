@@ -1005,7 +1005,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 339053558875496166, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 51
+      value: 66
       objectReference: {fileID: 0}
     - target: {fileID: 339053558875496166, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1041,7 +1041,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7263072024190365967, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_Text
-      value: Everyone is happy!
+      value: Back to the graveyard...
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1122,7 +1122,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7109b4f0f8ba7294b8b07796c874abbc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d5b784532b9982440bd6cc48b6007cfc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1214,7 +1214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 339053558875496166, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 51
+      value: -48
       objectReference: {fileID: 0}
     - target: {fileID: 339053558875496166, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1990,7 +1990,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7263072024190365967, guid: 119ecfcef56c7a74cabeceedbc86fb96, type: 3}
       propertyPath: m_Text
-      value: Back to the graveyard...
+      value: Click to find out
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

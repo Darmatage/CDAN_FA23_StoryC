@@ -69,7 +69,7 @@ public class GameHandler : MonoBehaviour {
 
 
         public void StartGame(){
-                SceneManager.LoadScene("Scene1");
+                SceneManager.LoadScene("scene_1");
         }
 
         public void OpenCredits(){

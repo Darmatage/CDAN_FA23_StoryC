@@ -13,6 +13,9 @@ public class scene_6_Dialogue : MonoBehaviour {
         public Text Char2speech;
        public Text Char3name;
        public Text Char3speech;
+       public Text Char4name;
+       public Text Char4speech;	   
+	   
 	public GameObject DialogueDisplay;
 	public GameObject ArtChar1a; //fury
 	public GameObject ArtChar1b; //mad
@@ -22,8 +25,6 @@ public class scene_6_Dialogue : MonoBehaviour {
 	public GameObject ArtChar2; //farmer 1
 	public GameObject ArtChar3; //famer 2
 	public GameObject ArtChar4; //farmer 3
-	public GameObject ArtChar5; //famer 4
-	public GameObject ArtChar6; //famer 5	
 	   
         public GameObject ArtBG1;
         public GameObject Choice1a;
@@ -35,6 +36,7 @@ public class scene_6_Dialogue : MonoBehaviour {
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
 		 public GameObject NextScene3Button;
+		  public GameObject NextScene4Button;
         public GameObject nextButton;
        //public AudioSource audioSource;
         private bool allowSpace = true;
@@ -43,9 +45,13 @@ public class scene_6_Dialogue : MonoBehaviour {
 void Start(){ 
 		GameHandler.metghost1 = true;
         DialogueDisplay.SetActive(false);
+		
         ArtChar1a.SetActive(false);
 		ArtChar1b.SetActive(false);
 		ArtChar1c.SetActive(false);
+        ArtChar2.SetActive(false);
+		ArtChar3.SetActive(false);
+		ArtChar4.SetActive(false);
 		
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
@@ -57,6 +63,7 @@ void Start(){
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
 		NextScene3Button.SetActive(false);
+		NextScene4Button.SetActive(false);
         nextButton.SetActive(true);
         GameHandler.metghost1 = true;
    }
@@ -67,7 +74,8 @@ void Update(){         // use spacebar as Next button
                        Next();
                 }
         }
-   }
+		
+}
 
 //Story Units! The main story function. Players hit [NEXT] to progress to the next primeInt:
 public void Next(){
@@ -76,15 +84,20 @@ public void Next(){
                 // AudioSource.Play();
         }
 	else if (primeInt == 2){
+		DialogueDisplay.SetActive(true);
 		 ArtChar1a.SetActive(true);
 		ArtChar1b.SetActive(false);
 		ArtChar1c.SetActive(false);
+		ArtChar3.SetActive(false);
+		ArtChar4.SetActive(false);
                 Char1name.text = "YOU";
                 Char1speech.text = "DUDE WHAT ARE YOU DOING?";
                 Char2name.text = "";
                 Char2speech.text = " ";
 		Char3name.text = " ";
 		Char3speech.text = " ";
+		Char4name.text = " ";
+		Char4speech.text = " ";
 	}
        else if (primeInt == 3){
                 Char1name.text = " ";
@@ -93,41 +106,64 @@ public void Next(){
                 Char2speech.text = "LETS SEE HOW THEY LIKE LOSING EVERYTHING";
 			Char3name.text = " ";
 			Char3speech.text = " ";
+					Char4name.text = " ";
+		Char4speech.text = " ";
         }
        else if (primeInt == 4){
+		    ArtChar1a.SetActive(false);
+		ArtChar1b.SetActive(false);
+		ArtChar1c.SetActive(false);
+		ArtChar3.SetActive(true);
+		ArtChar4.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = " ";
                 Char2speech.text = " ";
 			Char3name.text = "Background Farmer";
 			Char3speech.text = "Run for you life!!!";
+					Char4name.text = " ";
+		Char4speech.text = " ";
         }
        else if (primeInt == 5){
-                Char1name.text = "Background Farmer 2";
-                Char1speech.text = "My Crops!!! How could yoU!";
+		      ArtChar1a.SetActive(false);
+		ArtChar1b.SetActive(false);
+		ArtChar1c.SetActive(false);
+		ArtChar3.SetActive(false);
+		ArtChar4.SetActive(true);
+                Char1name.text = "";
+                Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
 			Char3name.text = " ";
-			Char3speech.text = " ";
+			Char3speech.text = "Background Farmer 2";
+					Char4name.text = "My Crops!!! How could you!";
+		Char4speech.text = " ";
         }
        else if (primeInt == 6){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "YOU";
-                Char2speech.text = "Stop, pleas! This won't change anything! You're only making things worse!";
-			Char3name.text = " ";
-			Char3speech.text = " ";
-        }
-       else if (primeInt == 7){
-                Char1name.text = "";
-                Char1speech.text = "";
+                Char1name.text = "YOU";
+                Char1speech.text = "Stop, pleas! This won't change anything! You're only making things worse!";
                 Char2name.text = "";
                 Char2speech.text = "";
-				Char3name.text = "Ghost Farmer";
-			    Char3speech.text = "I GUESS THAT'S WHAT I DO,HUH!?";
-				ArtChar1a.SetActive(false);
-		ArtChar1b.SetActive(true);
-		ArtChar1c.SetActive(false);
+			Char3name.text = " ";
+			Char3speech.text = " ";
+					Char4name.text = " ";
+		Char4speech.text = " ";
+        }
+       else if (primeInt == 7){
+			ArtChar1a.SetActive(false);
+			ArtChar1b.SetActive(true);
+			ArtChar1c.SetActive(false);
+			ArtChar3.SetActive(false);
+		ArtChar4.SetActive(false);
+                Char1name.text = "Ghost Farmer";
+                Char1speech.text = "I GUESS THAT'S WHAT I DO,HUH!?";
+                Char2name.text = "";
+                Char2speech.text = "";
+				Char3name.text = "";
+			    Char3speech.text = "";
+			Char4name.text = " ";
+			Char4speech.text = " ";
+
 				// Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -146,12 +182,20 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "Ghost Farmer";
                 Char2speech.text = "A WHAT?!";
+				Char3name.text = " ";
+		Char3speech.text = " ";
+		Char4name.text = " ";
+		Char4speech.text = " ";
         }
        else if (primeInt == 21){
                 Char1name.text = "YOU";
                 Char1speech.text = "A drink man. I've got some whiskey in my thermos, something to take the edge off";
                 Char2name.text = "";
                 Char2speech.text = "";
+				Char3name.text = " ";
+		Char3speech.text = " ";
+		Char4name.text = " ";
+		Char4speech.text = " ";
         
 				 }
        else if (primeInt == 22){
@@ -175,7 +219,11 @@ public void Next(){
                 Char2name.text = "Ghost Farmer";
                 Char2speech.text = "NOW YOU'VE DONE IT BOY! OHHH YOU'VE MADE ME MAD!";
 // bad ending after that^
-				 }
+              nextButton.SetActive(false);
+               allowSpace = false;
+               NextScene4Button.SetActive(true);//LOSER!
+			}     
+				 
 
 
        // after choice 1b
@@ -208,24 +256,40 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "Ghost Farmer";
                 Char2speech.text = "What?";
+					Char3name.text = " ";
+		Char3speech.text = " ";
+		Char4name.text = " ";
+		Char4speech.text = " ";
 				 }
        else if (primeInt == 34){
                 Char1name.text = "YOU";
                 Char1speech.text = "Your guilt and shame are holding you back...";
                 Char2name.text = "";
                 Char2speech.text = "";
+					Char3name.text = " ";
+		Char3speech.text = " ";
+		Char4name.text = " ";
+		Char4speech.text = " ";
 				 }
        else if (primeInt == 35){
                 Char1name.text = "YOU";
                 Char1speech.text = "If you face your actions and stop holding onto the past...";
                 Char2name.text = "";
                 Char2speech.text = "";
+					Char3name.text = " ";
+		Char3speech.text = " ";
+		Char4name.text = " ";
+		Char4speech.text = " ";
 				 }
        else if (primeInt == 36){
                 Char1name.text = "YOU";
                 Char1speech.text = "... Maybe you can move on from your purgatory. maybe you can see your family.";
                 Char2name.text = "";
                 Char2speech.text = "";
+					Char3name.text = " ";
+		Char3speech.text = " ";
+		Char4name.text = " ";
+		Char4speech.text = " ";
 				 }
        else if (primeInt == 37){
 		   ArtChar1a.SetActive(false);
@@ -235,6 +299,10 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "Ghost Farmer";
                 Char2speech.text = "What would you know, boy?! Why should I trust you?";
+				Char3name.text = " ";
+		Char3speech.text = " ";
+		Char4name.text = " ";
+		Char4speech.text = " ";
       // Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -263,12 +331,20 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "Ghost Farmer";
                 Char2speech.text = "But I've done so much harm...";
+				Char3name.text = " ";
+			Char3speech.text = " ";
+			Char4name.text = " ";
+			Char4speech.text = " ";
 	  }
 	   else if (primeInt == 43){
                 Char1name.text = "YOU";
                 Char1speech.text = "You were an addict, it's not all your fault";
                 Char2name.text = "";
                 Char2speech.text = "";
+			Char3name.text = " ";
+			Char3speech.text = " ";
+			Char4name.text = " ";
+			Char4speech.text = " ";
 	  }
 	  else if (primeInt == 44){
 		  ArtChar1a.SetActive(false);
@@ -278,6 +354,11 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "Ghost Farmer";
                 Char2speech.text = "I hope you're right about this";
+			Char3name.text = " ";
+			Char3speech.text = " ";
+			Char4name.text = " ";
+			Char4speech.text = " ";
+		//turn off next button
 		nextButton.SetActive(false);
 		allowSpace = false;
 		if ((GameHandler.metghost2==false)||(GameHandler.metghost3==false)){
@@ -294,14 +375,37 @@ public void Next(){
 	   ArtChar1a.SetActive(true);
 		ArtChar1b.SetActive(false);
 		ArtChar1c.SetActive(false);
-                Char1name.text = "Ghost Farmer";
-                Char1speech.text = "I read that Holy Book every night ‘fore bed and I aint never seen nothing like that in there! Sinners are rotten sinners and they will never change!";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Ghost Farmer";
+                Char2speech.text = "I read that Holy Book every night ‘fore bed and I aint never seen nothing like that in there!";
+				Char3name.text = " ";
+		Char3speech.text = " ";
+		Char4name.text = " ";
+		Char4speech.text = " ";
    }
-//bad ending   
-
-						
+   
+	else if (primeInt == 51){
+	   ArtChar1a.SetActive(true);
+		ArtChar1b.SetActive(false);
+		ArtChar1c.SetActive(false);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Ghost Farmer";
+                Char2speech.text = "Sinners are rotten sinners and they will never change!";
+				Char3name.text = " ";
+		Char3speech.text = " ";
+		Char4name.text = " ";
+		Char4speech.text = " ";
+		//bad ending 
+		nextButton.SetActive(false);
+		allowSpace = false;
+	 NextScene4Button.SetActive(true);//LOSER!
+			}   
+	//add button here
+   
+   
+				
 	//Please do NOT delete this final bracket that ends the Next() function:		
 }	
 
@@ -315,6 +419,8 @@ public void Next(){
                 Char2speech.text = "";
 				Char3name.text = " ";
 				Char3speech.text = " ";
+		Char4name.text = " ";
+		Char4speech.text = " ";
                 primeInt = 19;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
@@ -327,8 +433,9 @@ public void Next(){
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = " ";
-				Char3speech.text = " ";
-				
+		Char3speech.text = " ";
+		Char4name.text = " ";
+		Char4speech.text = " ";
                 primeInt = 29;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
@@ -340,9 +447,10 @@ public void Next(){
                 Char1speech.text = "I don't know for sure, but I have to believe there is a way out of this.";
                 Char2name.text = "";
                 Char2speech.text = "";
-				Char3name.text = " ";
-				Char3speech.text = " ";	
-			
+			Char3name.text = " ";
+		Char3speech.text = " ";
+		Char4name.text = " ";
+		Char4speech.text = " ";
                 primeInt = 39;
                 Choice2a.SetActive(false);
                 Choice2b.SetActive(false);
@@ -356,8 +464,9 @@ public void Next(){
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = " ";
-				Char3speech.text = " ";	
-				
+		Char3speech.text = " ";
+		Char4name.text = " ";
+		Char4speech.text = " ";
                 primeInt = 49;
                 Choice2a.SetActive(false);
                 Choice2b.SetActive(false);
@@ -376,5 +485,7 @@ public void Next(){
 		public void SceneChange3(){ // You win! All ghosts pacified
                 SceneManager.LoadScene("End_Win");
         }
-		
+		public void SceneChange4(){ // You win! All ghosts pacified
+                SceneManager.LoadScene("End_Lose1_Farmer");
+}
 }

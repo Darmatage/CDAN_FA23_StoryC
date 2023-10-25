@@ -29,7 +29,7 @@ public class scene_4_Dialogue : MonoBehaviour {
         public GameObject NextScene2Button;
 		public GameObject NextScene3Button;
         public GameObject nextButton;
-       //public AudioSource audioSource;
+       public AudioSource audioSource1;
         private bool allowSpace = true;
 
 // initial visibility settings. Any new images or buttons need to also be SetActive(false);
@@ -67,7 +67,7 @@ void Update(){         // use spacebar as Next button
 public void Next(){
         primeInt = primeInt + 1;
         if (primeInt == 1){
-                // AudioSource.Play();
+                //moved audio
         }
         else if (primeInt == 2){
                 
@@ -263,6 +263,7 @@ public void Next(){
                 Char2speech.text = "I think the town would be very grateful to see my performance instead";
         }
 		 else if (primeInt == 58){ //fade
+		  audioSource1.Play();
 		  ArtChar1a.SetActive(false);
 		  ArtChar1b.SetActive(false);
 		  ArtChar1c.SetActive(true);
@@ -473,8 +474,9 @@ public void Next(){
                 Char2speech.text = "HOW DARE YOU INSULT ME LIKE THIS? I WILL BRING MY TALENTS TO THE TOWN!";   
 		}
 
-		 else if (primeInt == 89){ //fade
-		   ArtChar1a.SetActive(false);
+	else if (primeInt == 89){ //fade
+			audioSource1.Play();		 
+		 ArtChar1a.SetActive(false);
 		  ArtChar1b.SetActive(false);
 		  ArtChar1c.SetActive(true);
 		  StartCoroutine(FadeOut(ArtChar1c, false));
@@ -589,7 +591,7 @@ public void Next(){
 
 		
         public void SceneChange1(){//actor ghost rampage scene
-               SceneManager.LoadScene("Scene7");
+               SceneManager.LoadScene("Scene_7");
         }
         public void SceneChange2(){//succeed in calming the ghost, go to graveyard
                 SceneManager.LoadScene("Scene_2");

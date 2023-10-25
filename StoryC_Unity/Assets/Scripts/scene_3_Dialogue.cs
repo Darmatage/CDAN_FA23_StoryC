@@ -29,6 +29,7 @@ public class scene_3_Dialogue : MonoBehaviour {
         public GameObject NextScene2Button;
 		 public GameObject NextScene3Button;
         public GameObject nextButton;
+		 public AudioSource audioSource1;
        //public AudioSource audioSource;
         private bool allowSpace = true;
 
@@ -292,6 +293,7 @@ public void Next(){
                 Char2speech.text = "";
 	  }  
 	  else if (primeInt == 45){
+		         audioSource1.Play();
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Farmer";
@@ -428,17 +430,11 @@ public void Next(){
                 Char2speech.text = "...he didn’t see much of my gambling but he grew away from me. Guess I wasn’t that great to be around so I dont blame him.";
 	}
 	else if (primeInt == 76){
+		audioSource1.Play();
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Farmer";
                 Char2speech.text = "Guess I wasn’t that great to be around so I dont blame him.";
-	}	
-	
-	else if (primeInt == 77){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
 		//^^ wait for rob to finish this up. But this goes to rampage!		
 		nextButton.SetActive(false);
 		allowSpace = false;
