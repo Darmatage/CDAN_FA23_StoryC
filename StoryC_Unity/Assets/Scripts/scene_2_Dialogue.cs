@@ -36,7 +36,7 @@ public class scene_2_Dialogue : MonoBehaviour {
 void Start(){
         DialogueDisplay.SetActive(false);
         ArtChar1a.SetActive(false);
-ArtChar2a.SetActive(false);
+		ArtChar2a.SetActive(false);
         ArtChar3a.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
@@ -50,6 +50,12 @@ ArtChar2a.SetActive(false);
         NextScene3_rampage.SetActive(false);
 		
         nextButton.SetActive(true);
+		
+		if ((GameHandler.metghost1)||(GameHandler.metghost2)||(GameHandler.metghost3)){
+			primeInt = 99;
+			
+		}
+		
    }
 
 void Update(){         // use spacebar as Next button
@@ -102,7 +108,7 @@ public void Next(){
                 Char2speech.text = "";
         }
        else if (primeInt ==7){
- ArtChar1a.SetActive(false);
+			ArtChar1a.SetActive(false);
          ArtChar2a.SetActive(true);
                 Char1name.text = "Actor";
                 Char1speech.text = "And your horrifyingly shrill voice is unbearable!";
@@ -127,73 +133,140 @@ public void Next(){
                             Char2name.text = "";
                             Char2speech.text = "";
         }
+		
+		
        else if (primeInt == 10){
         ArtChar1a.SetActive(false);
         ArtChar2a.SetActive(false);
         ArtChar3a.SetActive(true);
-                Char1name.text = "You";
-                Char1speech.text = "Fellas, please, one at a time! And keep your voices down, its 10pm, people are trying to get some sleep";
+                Char1name.text = "";
+                Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
                 // Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(true);
                 allowSpace = false;
-                //Choice1a.SetActive(true); // function Choice1aFunct()
-                //Choice1b.SetActive(true); // function Choice1bFunct()
+                Choice1a.SetActive(true); // function Choice1aFunct() Shut up!
+                Choice1b.SetActive(true); // function Choice1bFunct() OK, I will help
               }
-             else if (primeInt == 21){
-                      Char1name.text = "Narrator";
-                      Char1speech.text = "You have upset the poor resting souls of this plot. You must calm them down before they start harassing the people of the town";
-                      Char2name.text = "";
-                      Char2speech.text = "";
-                      nextButton.SetActive(false);
-                      allowSpace = false;
-                      NextScene1Button.SetActive(true);
-                    }
-                   else if (primeInt == 21){
-                            Char1name.text = "Narrator";
-                            Char1speech.text = "Who will you meet with first?";
-                            Char2name.text = "";
-                            Char2speech.text = "";
-                            nextButton.SetActive(false);
-                            allowSpace = false;
-                            NextScene1Button.SetActive(true);
-        }
+
+
+
 
        // after choice 1a
        else if (primeInt == 20){
                 //gameHandler.AddPlayerStat(1);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Then you are no use to me, and must be silenced.";
+                Char1name.text = "You";
+                Char1speech.text = "Fellas, keep your voices down! ";
+                Char2name.text = "";
+                Char2speech.text = "";
         }
        else if (primeInt == 21){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Come back here! Do not think you can hide from me!";
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene1Button.SetActive(true);
+                Char1name.text = "YOU";
+                Char1speech.text = "It's 10pm, people are trying to get some sleep";
+                Char2name.text = "";
+                Char2speech.text = "";
         }
+		else if (primeInt == 22){
+                Char1name.text = "YOU";
+                Char1speech.text = "OK. Ugh. Which of you creeps will I choose to speak with first?";
+                Char2name.text = "";
+                Char2speech.text = "";
+			primeInt=109;
+        }
+
 
        // after choice 1b
        else if (primeInt == 30){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Do not think you can fool me, human. Where will we find him?";
+                Char1name.text = "YOU";
+                Char1speech.text = "lets all settle down guy and keep down the ruckus! My boss will get mad!";
+                Char2name.text = "";
+                Char2speech.text = "";
         }
        else if (primeInt == 31){
                 Char1name.text = "YOU";
-                Char1speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
+                Char1speech.text = "This makes my job more intresting, let me help!";
                 Char2name.text = "";
                 Char2speech.text = "";
+        }
+		else if (primeInt == 32){
+                Char1name.text = "YOU";
+                Char1speech.text = "OK, which of you will I choose to speak with first?";
+                Char2name.text = "";
+                Char2speech.text = "";
+			primeInt=109;
+        }
+
+
+
+
+//dialogue when returning to graveyard from a ghost encounter
+		else if (primeInt == 100){
+			ArtChar1a.SetActive(false);
+			ArtChar2a.SetActive(false);
+			ArtChar3a.SetActive(false);
+			
+                Char1name.text = "YOU";
+                Char1speech.text = "Alright. Back in the graveyard.";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+		else if (primeInt == 101){
+                Char1name.text = "YOU";
+                Char1speech.text = "Who's next?";
+                Char2name.text = "";
+                Char2speech.text = "";
+				primeInt=109;
+        }
+		
+//choose a ghost to visit
+       else if (primeInt == 110){
+		   DialogueDisplay.SetActive(false);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+				//
                 nextButton.SetActive(false);
                 allowSpace = false;
-                NextScene2Button.SetActive(true);
+				
+				if (GameHandler.metghost1 == false){
+					ArtChar1a.SetActive(true);
+					NextScene1Button.SetActive(true);
+				}
+				if (GameHandler.metghost2 == false){
+					ArtChar2a.SetActive(true);
+					NextScene2Button.SetActive(true);
+				}
+				
+				if (GameHandler.metghost3 == false){
+					ArtChar3a.SetActive(true);
+					NextScene3Button.SetActive(true);
+				}
+				
+				if (GameHandler.ghost1rampage== true){
+					ArtChar1a.SetActive(false);
+					NextScene1_rampage.SetActive(true);
+				}
+				if (GameHandler.ghost2rampage == true){
+					ArtChar2a.SetActive(false);
+					NextScene2_rampage.SetActive(true);
+				}
+				if (GameHandler.ghost3rampage == true){
+					ArtChar3a.SetActive(false);
+					NextScene3_rampage.SetActive(true);
+				}	
+				
         }
+
+
+
+
+
+
+
+
+
 
       //Please do NOT delete this final bracket that ends the Next() function:
      }
@@ -223,24 +296,24 @@ public void Next(){
         }
 
         public void SceneChange1(){
-               SceneManager.LoadScene("scene_3");
+               SceneManager.LoadScene("scene_3"); // farmer
         }
         public void SceneChange2(){
-                SceneManager.LoadScene("scene_4");
+                SceneManager.LoadScene("scene_4");//actor
         }
 
         public void SceneChange3(){
-                SceneManager.LoadScene("scene_5");
+                SceneManager.LoadScene("scene_5");//accountant
         }
 		
-		 public void SceneChange1_rampage(){
+		 public void SceneChange1_rampage(){ // farmer rampage
                SceneManager.LoadScene("scene_6");
         }
-        public void SceneChange2_rampage(){
+        public void SceneChange2_rampage(){// acotr rampage
                 SceneManager.LoadScene("scene_7");
         }
 
-        public void SceneChange3_rampage(){
+        public void SceneChange3_rampage(){//acountant rampage
                 SceneManager.LoadScene("scene_9");
         }
 

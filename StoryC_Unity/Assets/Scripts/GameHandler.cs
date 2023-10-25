@@ -70,6 +70,18 @@ public class GameHandler : MonoBehaviour {
 
         public void StartGame(){
                 SceneManager.LoadScene("scene_1");
+				
+				metghost1 = false;
+				metghost2 = false;
+				metghost3 = false;
+		
+				ghost1happy = false;
+				ghost2happy = false;
+				ghost3happy = false;
+		
+				ghost1rampage = false;
+				ghost2rampage = false;
+				ghost3rampage = false;
         }
 
         public void OpenCredits(){

@@ -52,7 +52,8 @@ void Start(){
         NextScene2Button.SetActive(false);
 		NextScene3Button.SetActive(false);
         nextButton.SetActive(true);
-        GameHandler.metghost1 = true;
+        
+		GameHandler.metghost1 = true;
    }
 
 void Update(){         // use spacebar as Next button
@@ -293,16 +294,44 @@ public void Next(){
                 Char2speech.text = "";
 	  }  
 	  else if (primeInt == 45){
-		         audioSource1.Play();
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Farmer";
                 Char2speech.text = "Don't tell me to calm down!";
-				//^^^^^ move onto rage sceene of farmer after this -- scene_8
-				nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene1Button.SetActive(true);	
 	  }
+	  
+	 else if (primeInt == 77){
+		audioSource1.Play();
+		ArtChar1a.SetActive(false);
+		  ArtChar1b.SetActive(false);
+		  ArtChar1c.SetActive(true);
+		  StartCoroutine(FadeOut(ArtChar1c, false));
+		
+		GameHandler.ghost1rampage = true;
+		
+                Char1name.text = "YOU";
+                Char1speech.text = "Oh, crap. Now I have to chase him down???.";
+                Char2name.text = "";
+                Char2speech.text = "";
+	}
+	else if (primeInt == 78){
+                Char1name.text = "YOU";
+                Char1speech.text = "Did I see a farm on the way into town?";
+                Char2name.text = "";
+                Char2speech.text = "";
+	}
+		else if (primeInt == 79){
+                Char1name.text = "YOU";
+                Char1speech.text = "Do I even want to deal with an angry ghost right now?";
+                Char2name.text = "";
+                Char2speech.text = "";
+						//^^ wait for rob to finish this up. But this goes to rampage!		
+		nextButton.SetActive(false);
+		allowSpace = false;
+		NextScene1Button.SetActive(true); // Rampage!	
+		NextScene2Button.SetActive(true); // graveyard		
+	}
+	  
 	  
 	  
   // after choice 2b
@@ -435,11 +464,51 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "Ghost Farmer";
                 Char2speech.text = "Guess I wasn’t that great to be around so I dont blame him.";
-		//^^ wait for rob to finish this up. But this goes to rampage!		
+	}	
+
+	else if (primeInt == 76){
+		ArtChar1a.SetActive(false);
+		   ArtChar1b.SetActive(false);
+		ArtChar1c.SetActive(true);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Ghost Farmer";
+                Char2speech.text = "BUT I AM STILL RILED UP AND GONNA TELL 'IM SO!.";
+	}
+
+	else if (primeInt == 77){
+		audioSource1.Play();
+		ArtChar1a.SetActive(false);
+		  ArtChar1b.SetActive(false);
+		  ArtChar1c.SetActive(true);
+		  StartCoroutine(FadeOut(ArtChar1c, false));
+		
+		GameHandler.ghost1rampage = true;
+		
+                Char1name.text = "YOU";
+                Char1speech.text = "Oh, crap. That took a turn.";
+                Char2name.text = "";
+                Char2speech.text = "";
+	}
+	else if (primeInt == 78){
+                Char1name.text = "YOU";
+                Char1speech.text = "Did I see a farm on the way into town?";
+                Char2name.text = "";
+                Char2speech.text = "";
+	}
+		else if (primeInt == 79){
+                Char1name.text = "YOU";
+                Char1speech.text = "Do I even want to deal with an angry ghost right now?";
+                Char2name.text = "";
+                Char2speech.text = "";
+						//^^ wait for rob to finish this up. But this goes to rampage!		
 		nextButton.SetActive(false);
 		allowSpace = false;
 		NextScene1Button.SetActive(true); // Rampage!	
-	}	  
+		NextScene2Button.SetActive(true); // graveyard		
+	}
+
+	
 	
 	// after choice 3b
 	else if (primeInt == 80){
@@ -602,6 +671,36 @@ public void Next(){
 		
 		public void SceneChange3(){ // You win! All ghosts pacified
                 SceneManager.LoadScene("End_Win");
+        }
+		
+		
+		
+		IEnumerator FadeIn(GameObject fadeImage, bool isBlack){
+			int col = 1;
+			if (isBlack){col=0;} else {col=1;} 
+			
+                float alphaLevel = 0;
+                fadeImage.GetComponent<Image>().color = new Color(col, col, col, alphaLevel);
+                for(int i = 0; i < 100; i++){
+                        alphaLevel += 0.01f;
+                        yield return null;
+                        fadeImage.GetComponent<Image>().color = new Color(col, col, col, alphaLevel);
+                        Debug.Log("Alpha is: " + alphaLevel);
+                }
+        }
+
+        IEnumerator FadeOut(GameObject fadeImage, bool isBlack){
+			int col = 1;
+			if (isBlack){col=0;} else {col=1;} 
+				
+                float alphaLevel = 1;
+                fadeImage.GetComponent<Image>().color = new Color(col, col, col, alphaLevel);
+                for(int i = 0; i < 100; i++){
+                        alphaLevel -= 0.01f;
+                        yield return null;
+                        fadeImage.GetComponent<Image>().color = new Color(col, col, col, alphaLevel);
+                        Debug.Log("Alpha is: " + alphaLevel);
+                }
         }
 		
 }

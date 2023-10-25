@@ -31,6 +31,9 @@ public class Scene_5_Dialogue : MonoBehaviour {
 
 // initial visibility settings. Any new images or buttons need to also be SetActive(false);
 void Start(){  
+
+	GameHandler.metghost3 = true;
+
         DialogueDisplay.SetActive(false);
         ArtChar1a.SetActive(false);
 		ArtChar1b.SetActive(false);
@@ -605,7 +608,7 @@ void Start(){
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "Yeah of course! I mean, who hasnt? Amirite?";
+                Char1speech.text = "Yeah of course! I mean, who hasn't? Amirite?";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 19;
