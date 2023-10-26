@@ -179,7 +179,7 @@ public void Next(){
        // after choice 1b
        else if (primeInt == 30){
                 Char1name.text = "YOU";
-                Char1speech.text = "lets all settle down guy and keep down the ruckus! My boss will get mad!";
+                Char1speech.text = "Lets all settle down, guys, and keep down the ruckus! \nMy boss will get mad!";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -274,7 +274,7 @@ public void Next(){
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "I don't know what you're talking about!";
+                Char1speech.text = "Crap, you are loud!";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 19;
@@ -285,7 +285,7 @@ public void Next(){
         }
         public void Choice1bFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "Sure, anything you want... just lay off the club.";
+                Char1speech.text = "Woah -- not so loud, OK?";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 29;

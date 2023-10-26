@@ -396,7 +396,7 @@ void Start(){
 			//go to next scene
                 nextButton.SetActive(false);
                 allowSpace = false;
-                NextScene2Button.SetActive(true);
+                NextScene2Button.SetActive(true); // you lose
 			 }		
 	
 
@@ -493,7 +493,7 @@ void Start(){
 			//go to next scene
                 nextButton.SetActive(false);
                 allowSpace = false;
-                NextScene1Button.SetActive(true);
+                NextScene1Button.SetActive(true); // go to banker's family home
 		}
 
 
@@ -548,7 +548,7 @@ void Start(){
                 Char1speech.text = "Hey, Ghost! Stop it! What would your family think?!";
                 Char2name.text = "";
                 Char2speech.text = "";
-                primeInt = 59;
+                primeInt = 49;
                 Choice2a.SetActive(false);
                 Choice2b.SetActive(false);
                 nextButton.SetActive(true);

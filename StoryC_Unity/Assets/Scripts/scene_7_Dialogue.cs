@@ -810,10 +810,11 @@ public void Next(){
 		
 
 		
-        public void SceneChange1(){//actor ghost rampage scene
+        public void SceneChange1(){//actor ghost rampage scene -- old, unused button
                SceneManager.LoadScene("Scene_7");
         }
         public void SceneChange2(){//succeed in calming the ghost, go to graveyard
+				GameHandler.ghost2rampage = false;
                 SceneManager.LoadScene("Scene_2");
         }
 		

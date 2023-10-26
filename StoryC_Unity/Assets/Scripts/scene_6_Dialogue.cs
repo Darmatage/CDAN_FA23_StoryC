@@ -119,9 +119,9 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = " ";
                 Char2speech.text = " ";
-			Char3name.text = "Background Farmer";
+			Char3name.text = "Farmer 1";
 			Char3speech.text = "Run for you life!!!";
-					Char4name.text = " ";
+		Char4name.text = " ";
 		Char4speech.text = " ";
         }
        else if (primeInt == 5){
@@ -135,13 +135,13 @@ public void Next(){
                 Char2name.text = "";
                 Char2speech.text = "";
 			Char3name.text = " ";
-			Char3speech.text = "Background Farmer 2";
-					Char4name.text = "My Crops!!! How could you!";
-		Char4speech.text = " ";
+			Char3speech.text = "";
+			Char4name.text = "Farmer 2";
+			Char4speech.text = "My Crops!!! How could you!";
         }
        else if (primeInt == 6){
                 Char1name.text = "YOU";
-                Char1speech.text = "Stop, pleas! This won't change anything! You're only making things worse!";
+                Char1speech.text = "Stop, please! \nThis won't change anything! \nYou're only making things worse!";
                 Char2name.text = "";
                 Char2speech.text = "";
 			Char3name.text = " ";
@@ -189,10 +189,10 @@ public void Next(){
         }
        else if (primeInt == 21){
                 Char1name.text = "YOU";
-                Char1speech.text = "A drink man. I've got some whiskey in my thermos, something to take the edge off";
+                Char1speech.text = "A drink man. \nI've got some whiskey in my thermos, something to take the edge off";
                 Char2name.text = "";
                 Char2speech.text = "";
-				Char3name.text = " ";
+		Char3name.text = " ";
 		Char3speech.text = " ";
 		Char4name.text = " ";
 		Char4speech.text = " ";
@@ -206,18 +206,30 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "Ghost Farmer";
                 Char2speech.text = "I AINT EVER GONNA TOUCH A DROP OF THAT FOUL STUFF AGAIN!";
+						Char3name.text = " ";
+		Char3speech.text = " ";
+		Char4name.text = " ";
+		Char4speech.text = " ";
 	   }
        else if (primeInt == 23){
                 Char1name.text = "YOU";
                 Char1speech.text = "What?!";
                 Char2name.text = "";
                 Char2speech.text = "";
+						Char3name.text = " ";
+		Char3speech.text = " ";
+		Char4name.text = " ";
+		Char4speech.text = " ";
 				 }
        else if (primeInt == 24){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Farmer";
                 Char2speech.text = "NOW YOU'VE DONE IT BOY! OHHH YOU'VE MADE ME MAD!";
+						Char3name.text = " ";
+		Char3speech.text = " ";
+		Char4name.text = " ";
+		Char4speech.text = " ";
 // bad ending after that^
               nextButton.SetActive(false);
                allowSpace = false;
@@ -234,7 +246,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Farmer";
-                Char2speech.text = "I've done so much sin already, what's a little more! Where am I going to go? Hell?... ";
+                Char2speech.text = "I've done so much sin already, what's a little more! \nWhere am I going to go? Hell?... ";
         }
        else if (primeInt == 31){
                 Char1name.text = "";
@@ -298,7 +310,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Farmer";
-                Char2speech.text = "What would you know, boy?! Why should I trust you?";
+                Char2speech.text = "What would you know, boy?! \nWhy should I trust you?";
 				Char3name.text = " ";
 		Char3speech.text = " ";
 		Char4name.text = " ";
@@ -338,7 +350,7 @@ public void Next(){
 	  }
 	   else if (primeInt == 43){
                 Char1name.text = "YOU";
-                Char1speech.text = "You were an addict, it's not all your fault";
+                Char1speech.text = "You were an addict, \nit's not all your fault";
                 Char2name.text = "";
                 Char2speech.text = "";
 			Char3name.text = " ";
@@ -414,7 +426,7 @@ public void Next(){
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "Hey man let's just try to calm down! Why don't I get both of us a drink huh?";
+                Char1speech.text = "Hey man let's just try to calm down! \nWhy don't I get both of us a drink huh?";
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = " ";
@@ -429,7 +441,7 @@ public void Next(){
         }
         public void Choice1bFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "Pleas! What would your wife think!";
+                Char1speech.text = "Please! What would your wife think!";
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = " ";
@@ -460,7 +472,7 @@ public void Next(){
 		
 		public void Choice2bFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "I saw it in the Bible! Jut trust me!";
+                Char1speech.text = "I saw it in the Bible! \nJust trust me!";
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = " ";
@@ -475,17 +487,18 @@ public void Next(){
 		}
 		
 		
-        public void SceneChange1(){ // rampage!
+        public void SceneChange1(){ // lose
                SceneManager.LoadScene("End_Lose1_Farmer");
         }
         public void SceneChange2(){ // back to graveyard
+				GameHandler.ghost1rampage = false;
                 SceneManager.LoadScene("scene_2");
         }
 		
 		public void SceneChange3(){ // You win! All ghosts pacified
                 SceneManager.LoadScene("End_Win");
         }
-		public void SceneChange4(){ // You win! All ghosts pacified
+		public void SceneChange4(){ // lose copy
                 SceneManager.LoadScene("End_Lose1_Farmer");
-}
+		}
 }

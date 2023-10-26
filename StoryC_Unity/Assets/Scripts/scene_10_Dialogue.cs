@@ -374,6 +374,7 @@ public void Next(){
                SceneManager.LoadScene("End_Lose");
         }
         public void SceneChange2(){
+			GameHandler.ghost3rampage = false;
                 SceneManager.LoadScene("scene_2"); //return to graveyard
         }
 		        public void SceneChange3(){
