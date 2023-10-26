@@ -53,7 +53,6 @@ void Start(){
 		
 		if ((GameHandler.metghost1)||(GameHandler.metghost2)||(GameHandler.metghost3)){
 			primeInt = 99;
-			
 		}
 		
    }
@@ -76,13 +75,13 @@ public void Next(){
                 //ArtChar1a.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "You";
-                Char1speech.text = "*Yawn* I’m still not used to being up at such a late hour working";
+                Char1speech.text = "*Yawn* I’m still not used to being up working at such a late hour.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt ==3){
                 Char1name.text = "You";
-                Char1speech.text = "And in this place no less. I mean, talk about a “graveyard shift”, am I right?";
+                Char1speech.text = "And in this place no less. \nI mean, talk about a 'graveyard shift', am I right?";
                 Char2name.text = "";
                 Char2speech.text = "";
                 //gameHandler.AddPlayerStat(1);
@@ -90,13 +89,13 @@ public void Next(){
        else if (primeInt == 4){
          //ArtChar1a.SetActive(true);
                 Char1name.text = "You";
-                Char1speech.text = "hahaha……..jeez, tough crowd";
+                Char1speech.text = "hahaha... \njeez, tough crowd";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 5){
                 Char1name.text = "YOU";
-                Char1speech.text = "Sweet mother of god, fuckin ghosts!";
+                Char1speech.text = "Sweet mother of god! \nFuckin' ghosts!";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -120,7 +119,7 @@ public void Next(){
                ArtChar2a.SetActive(false);
                ArtChar3a.SetActive(true);
                       Char1name.text = "Accountant";
-                      Char1speech.text = "I never sleep…..";
+                      Char1speech.text = "I never sleep...";
                       Char2name.text = "";
                       Char2speech.text = "";
                     }
@@ -136,8 +135,8 @@ public void Next(){
 		
 		
        else if (primeInt == 10){
-        ArtChar1a.SetActive(false);
-        ArtChar2a.SetActive(false);
+        ArtChar1a.SetActive(true);
+        ArtChar2a.SetActive(true);
         ArtChar3a.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "";
@@ -163,7 +162,7 @@ public void Next(){
         }
        else if (primeInt == 21){
                 Char1name.text = "YOU";
-                Char1speech.text = "It's 10pm, people are trying to get some sleep";
+                Char1speech.text = "It's 10pm. People are trying to get some sleep";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -185,23 +184,22 @@ public void Next(){
         }
        else if (primeInt == 31){
                 Char1name.text = "YOU";
-                Char1speech.text = "This makes my job more intresting, let me help!";
+                Char1speech.text = "Well, this does make my job more interesting. Let me help!";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
 		else if (primeInt == 32){
                 Char1name.text = "YOU";
-                Char1speech.text = "OK, which of you will I choose to speak with first?";
+                Char1speech.text = "OK. Which of you will I choose to speak with first?";
                 Char2name.text = "";
                 Char2speech.text = "";
 			primeInt=109;
         }
 
 
-
-
 //dialogue when returning to graveyard from a ghost encounter
 		else if (primeInt == 100){
+			DialogueDisplay.SetActive(true);
 			ArtChar1a.SetActive(false);
 			ArtChar2a.SetActive(false);
 			ArtChar3a.SetActive(false);
@@ -260,14 +258,6 @@ public void Next(){
         }
 
 
-
-
-
-
-
-
-
-
       //Please do NOT delete this final bracket that ends the Next() function:
      }
 
@@ -285,7 +275,7 @@ public void Next(){
         }
         public void Choice1bFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "Woah -- not so loud, OK?";
+                Char1speech.text = "Woah-- not so loud, OK?";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 29;
