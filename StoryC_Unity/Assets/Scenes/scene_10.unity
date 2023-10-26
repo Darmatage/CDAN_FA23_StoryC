@@ -510,8 +510,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.5824, y: 0}
-  m_SizeDelta: {x: 254.8352, y: 70}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 375, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &145406396
 MonoBehaviour:
@@ -2010,6 +2010,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 106014560}
     m_Modifications:
+    - target: {fileID: 171942529994893940, guid: e35ae355afe500e4ea3e9e1be3636739, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 171942529994893940, guid: e35ae355afe500e4ea3e9e1be3636739, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -440.95547
+      objectReference: {fileID: 0}
     - target: {fileID: 634376236304334480, guid: e35ae355afe500e4ea3e9e1be3636739, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -2102,9 +2110,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5116672859842406405, guid: e35ae355afe500e4ea3e9e1be3636739, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 375
+      objectReference: {fileID: 0}
+    - target: {fileID: 5116672859842406405, guid: e35ae355afe500e4ea3e9e1be3636739, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200680376507253745, guid: e35ae355afe500e4ea3e9e1be3636739, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 375
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200680376507253745, guid: e35ae355afe500e4ea3e9e1be3636739, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5952533910993445599, guid: e35ae355afe500e4ea3e9e1be3636739, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 375
+      objectReference: {fileID: 0}
+    - target: {fileID: 5952533910993445599, guid: e35ae355afe500e4ea3e9e1be3636739, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7857043336238140828, guid: e35ae355afe500e4ea3e9e1be3636739, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200764652314961790, guid: e35ae355afe500e4ea3e9e1be3636739, type: 3}
+      propertyPath: m_Text
+      value: Ghost Accountant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2285,16 +2321,28 @@ PrefabInstance:
     m_TransformParent: {fileID: 106014560}
     m_Modifications:
     - target: {fileID: 821760910038570592, guid: ad81d3cedb04c9f4fad8a4d50f71932e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1903258453}
+    - target: {fileID: 821760910038570592, guid: ad81d3cedb04c9f4fad8a4d50f71932e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Resume
       objectReference: {fileID: 0}
+    - target: {fileID: 1646895107455380708, guid: ad81d3cedb04c9f4fad8a4d50f71932e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1903258453}
     - target: {fileID: 1646895107455380708, guid: ad81d3cedb04c9f4fad8a4d50f71932e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: RestartGame
       objectReference: {fileID: 0}
     - target: {fileID: 3246862371621259702, guid: ad81d3cedb04c9f4fad8a4d50f71932e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1903258453}
+    - target: {fileID: 3246862371621259702, guid: ad81d3cedb04c9f4fad8a4d50f71932e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: QuitGame
+      value: RestartGame
       objectReference: {fileID: 0}
     - target: {fileID: 4125601247395342177, guid: ad81d3cedb04c9f4fad8a4d50f71932e, type: 3}
       propertyPath: m_AnchorMax.x
