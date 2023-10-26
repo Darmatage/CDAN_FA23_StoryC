@@ -89,7 +89,7 @@ public void Next(){
        else if (primeInt == 4){
          //ArtChar1a.SetActive(true);
                 Char1name.text = "You";
-                Char1speech.text = "hahaha... \njeez, tough crowd";
+                Char1speech.text = "hahaha... \njeez, tough crowd.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -102,7 +102,7 @@ public void Next(){
        else if (primeInt == 6){
          ArtChar1a.SetActive(true);
                 Char1name.text = "Farmer";
-                Char1speech.text = "All that yammerin of yours woke me the hell up, boy!";
+                Char1speech.text = "All that yammerin' of yours woke me the hell up, boy!";
                 Char2name.text = "";
                 Char2speech.text = "";
         }

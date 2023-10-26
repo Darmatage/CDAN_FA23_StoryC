@@ -310,7 +310,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 418, y: -26.343}
+  m_AnchoredPosition: {x: 426, y: -46}
   m_SizeDelta: {x: 402.0812, y: 470.69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &362241239
@@ -346,10 +346,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'All the crops in the local community are gone,  everyone starves to death
-    :(
-
-'
+  m_Text: "All the crops in the local community are gone. \n\n\nEveryone \nstarves
+    to \ndeath :(\n"
 --- !u!222 &362241240
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -746,7 +744,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -404.44904, y: -26.343}
+  m_AnchoredPosition: {x: -404.44904, y: -40}
   m_SizeDelta: {x: 402.0812, y: 470.69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1892912782
@@ -782,9 +780,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Oh no! You couldn''t stop the Ghost Farmer!
-
-'
+  m_Text: "Oh no! \n\nYou couldn't stop the Ghost Farmer!\n"
 --- !u!222 &1892912783
 CanvasRenderer:
   m_ObjectHideFlags: 0
