@@ -150,7 +150,7 @@ public void Next(){
                 Char2name.text = "";
      	        Char2speech.text = "";
 				Char3name.text = "Actor 1";
-				Char3speech.text = "Jesus this guy is like a theasaurus";
+				Char3speech.text = "Jesus this guy is like a theasaurus.";
 			    Char4name.text = "";
 				Char4speech.text = "";
 				
@@ -218,7 +218,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Actor";
-                Char2speech.text = "I am insulted that your memory is so pitfully small and unreliable";
+                Char2speech.text = "I am insulted that your memory is so pitfully small and unreliable!";
 				Char3name.text = "";
 				Char3speech.text = "";
 				Char4name.text = "";
@@ -226,7 +226,7 @@ public void Next(){
         }
 		else if (primeInt == 23){
                 Char1name.text = "YOU";
-                Char1speech.text = "Hey man you dont gotta be so mean!";
+                Char1speech.text = "Hey man you don't gotta be so mean!";
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "";
@@ -386,7 +386,7 @@ public void Next(){
 	   } 
        else if (primeInt == 51){
                 Char1name.text = "YOU";
-                Char1speech.text = "psssh Yeah man";
+                Char1speech.text = "psssh Yeah man.";
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "";
@@ -465,7 +465,7 @@ public void Next(){
         }
 		 else if (primeInt == 58){ 
                 Char1name.text = "YOU";
-                Char1speech.text = "... to follow in your footsteps, to become actors themselevs";
+                Char1speech.text = "... to follow in your footsteps, to become actors themselves.";
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "";
@@ -780,7 +780,7 @@ public void Next(){
 		
 		   else if (primeInt == 119){
                 Char1name.text = "YOU";
-                Char1speech.text = "Yeah man, so why dont you just chill out? \nAnd maybe in a few years these guys will be making you proud.";
+                Char1speech.text = "Yeah man, so why don't you just chill out? \nAnd maybe in a few years these guys will be making you proud.";
                 Char2name.text = "";
                 Char2speech.text = "";   
 		}
@@ -851,7 +851,7 @@ public void Next(){
 		
 		public void Choice3aFunct(){ //no
                 Char1name.text = "YOU";
-                Char1speech.text = "Yeah no, all I see was you being an absolute dork then croaking";
+                Char1speech.text = "Yeah no, all I see was you being an absolute dork then croaking.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 99;

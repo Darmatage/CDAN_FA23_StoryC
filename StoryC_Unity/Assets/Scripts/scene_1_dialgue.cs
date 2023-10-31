@@ -78,7 +78,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Boss";
-                Char2speech.text = "The only one you gonna be talking to is me, pal";
+                Char2speech.text = "The only one you gonna be talking to is me, pal.";
         }
        else if (primeInt == 6){
                 Char1name.text = "";
@@ -96,7 +96,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Boss";
-                Char2speech.text = "Yeah which why we hired you dummy, go clean";
+                Char2speech.text = "Yeah, which why we hired you dummy, go clean.";
         }
 		  else if (primeInt ==9){
                 Char1name.text = "YOU";
@@ -116,7 +116,7 @@ public void Next(){
 			Char1name.text = "";
 			Char1speech.text = "";
 			Char2name.text = "Boss";
-			Char2speech.text = "Tools in the shed. \nKeep your eyes open. \nDon't break my tools.";
+			Char2speech.text = "Tools are in the shed. \nKeep your eyes open. \nDon't break my tools.";
         }
        else if (primeInt == 21){
 			Char1name.text = "YOU";
@@ -138,7 +138,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Boss";
-                Char2speech.text = "Well dont worry about that, kiddo. \nJust keep the place clean and you won't have any, uh... 'problems' hehe";
+                Char2speech.text = "Well dont worry about that, kiddo. \nJust keep the place clean and you won't have any, uh... 'problems' hehe.";
         }
 		
 		  else if (primeInt ==32){
@@ -157,7 +157,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Boss";
-                Char2speech.text = "Folks here like their dead resting peacefully, if you know what I mean";
+                Char2speech.text = "Folks here like their dead resting peacefully, if you know what I mean.";
         }
 		 else if (primeInt ==35){
                 Char1name.text = "YOU";

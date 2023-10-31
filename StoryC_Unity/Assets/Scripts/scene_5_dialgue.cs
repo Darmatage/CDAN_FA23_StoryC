@@ -85,7 +85,7 @@ void Start(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Accountant";
-                Char2speech.text = "Don’t mind the mess, it gets a little crazy here sometimes.";
+                Char2speech.text = "Don't mind the mess, it gets a little crazy here sometimes.";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
@@ -114,7 +114,7 @@ void Start(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Accountant";
-                Char2speech.text = "Anyways, I've taken the liberty of looking at your employer's finances and I must say I am quite intrested";
+                Char2speech.text = "Anyways, I've taken the liberty of looking at your employer's finances and I must say I am quite intrested.";
 		}
        else if (primeInt == 8){
                 Char1name.text = "YOU";
@@ -256,7 +256,7 @@ void Start(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Accountant";
-                Char2speech.text = "There, I’ve added all the relevant information to your tax statement in an addendum.";
+                Char2speech.text = "There, I've added all the relevant information to your tax statement in an addendum.";
 				 }
        else if (primeInt == 35){
 		    ArtChar1b.SetActive(false);
@@ -265,7 +265,7 @@ void Start(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Accountant";
-                Char2speech.text = "You need to make sure you catch these kinds of things next time";
+                Char2speech.text = "You need to make sure you catch these kinds of things next time.";
 				 }
        else if (primeInt == 36){
                 Char1name.text = "YOU";
@@ -275,7 +275,7 @@ void Start(){
 				 }
        else if (primeInt == 37){
                 Char1name.text = "YOU";
-                Char1speech.text = "...would have happened if someone else caught that";
+                Char1speech.text = "...would have happened if someone else caught that.";
                 Char2name.text = "";
                 Char2speech.text = "";
 				 }
@@ -323,7 +323,7 @@ void Start(){
         }
        else if (primeInt == 41){
                 Char1name.text = "YOU";
-                Char1speech.text = "Yeah whatever";
+                Char1speech.text = "Yeah whatever.";
                 Char2name.text = "";
                 Char2speech.text = "";
 		 }
@@ -336,7 +336,7 @@ void Start(){
         }
        else if (primeInt == 43){
                 Char1name.text = "YOU";
-                Char1speech.text = "Absolutely. No doubt in my mind whatsoever";
+                Char1speech.text = "Absolutely. No doubt in my mind whatsoever.";
                 Char2name.text = "";
                 Char2speech.text = "";
 		 }
@@ -344,12 +344,12 @@ void Start(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Accountant";
-                Char2speech.text = "Well then thats certainly intresting to hear";
+                Char2speech.text = "Well then that's certainly intresting to hear.";
 			
 	 }
        else if (primeInt == 45){
                 Char1name.text = "YOU";
-                Char1speech.text = "Whys that?...";
+                Char1speech.text = "Why's that?...";
                 Char2name.text = "";
                 Char2speech.text = "";
 		}
@@ -369,7 +369,7 @@ void Start(){
 		}
        else if (primeInt == 48){
                 Char1name.text = "YOU";
-                Char1speech.text = "nahhh thats crazy I totally put Ruth down";
+                Char1speech.text = "nahhh thats crazy I totally put Ruth down!";
                 Char2name.text = "";
                 Char2speech.text = "";
 	    }
@@ -403,7 +403,7 @@ void Start(){
 		  
 		  GameHandler.ghost3rampage = true;
                 Char1name.text = "YOU";
-                Char1speech.text = "Aw jeez this can't be good";
+                Char1speech.text = "Aw jeez this can't be good.";
                 Char2name.text = "";
                 Char2speech.text = "";   
 	   }
@@ -513,7 +513,7 @@ void Start(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Accountant";
-                Char2speech.text = "Its no matter. I misjudged you, I apologize";
+                Char2speech.text = "It's no matter. I misjudged you, I apologize";
 		}
        else if (primeInt == 72){
                 Char1name.text = "YOU";
@@ -555,11 +555,11 @@ void Start(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Accountant";
-                Char2speech.text = "Turn it upside down";
+                Char2speech.text = "Turn it upside down.";
 				  }
        else if (primeInt == 79){
                 Char1name.text = "YOU";
-                Char1speech.text = "What? Oh. It says boobs now. Funny";
+                Char1speech.text = "What? Oh. It says boobs now. Funny.";
                 Char2name.text = "";
                 Char2speech.text = "";
 				  }
@@ -570,11 +570,11 @@ void Start(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Accountant";
-                Char2speech.text = "we like to have fun around here";
+                Char2speech.text = "We like to have fun around here";
 				 }
        else if (primeInt == 81){
                 Char1name.text = "YOU";
-                Char1speech.text = "You are literally the only one here";
+                Char1speech.text = "You are literally the only one here.";
                 Char2name.text = "";
                 Char2speech.text = "";
 				primeInt = 99;
@@ -619,7 +619,7 @@ void Start(){
         }
         public void Choice1bFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "Uhm,well...no...";
+                Char1speech.text = "Uhm, well...no...";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 29;
@@ -633,7 +633,7 @@ void Start(){
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #2 and SceneChanges)
         public void Choice2aFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "Yeah I defintely put down a Ruth IRA";
+                Char1speech.text = "Yeah I defintely put down a Ruth IRA!";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 39;

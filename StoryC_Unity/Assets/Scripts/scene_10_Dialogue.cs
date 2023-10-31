@@ -68,7 +68,7 @@ public void Next(){
                 ArtChar1a.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "YOU";
-                Char1speech.text = "So, this is where your family lives now huh? Kinda empty";
+                Char1speech.text = "So, this is where your family lives now huh? Kinda empty..";
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "";
@@ -81,7 +81,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Accountant";
-                Char2speech.text = "Things must've been hard for my family if they live here";
+                Char2speech.text = "Things must've been hard for my family if they live here.";
                 Char3name.text = "";
                 Char3speech.text = "";
 				Char4name.text = "";
@@ -197,7 +197,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Accountant";
-                Char2speech.text = "I'm the same boring accountant you still married all those years ago";
+                Char2speech.text = "I'm the same boring accountant you still married all those years ago.";
 				Char3name.text = "";
                 Char3speech.text = "";
 				Char4name.text = "";
@@ -217,7 +217,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Accountant";
-                Char2speech.text = "I didn't mean to leave you like this. I should have stayed home that day";
+                Char2speech.text = "I didn't mean to leave you like this. I should have stayed home that day.";
 				Char3name.text = "";
                 Char3speech.text = "";
 				Char4name.text = "";
@@ -317,7 +317,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Accountant";
-                Char2speech.text = "Yeah kid. Sorry for the trouble. I can rest now";
+                Char2speech.text = "Yeah kid. Sorry for the trouble. I can rest now.";
 				Char3name.text = "";
                 Char3speech.text = "";
 				Char4name.text = "";

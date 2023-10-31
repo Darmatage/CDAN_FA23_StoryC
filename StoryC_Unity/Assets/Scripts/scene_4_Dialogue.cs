@@ -88,7 +88,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Actor";
-                Char2speech.text = "Why yes!You are at the the-at-er!";
+                Char2speech.text = "Why yes! You are at the the-at-er!";
         }
 		else if (primeInt == 4){
                 Char1name.text = "";
@@ -146,7 +146,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Actor";
-                Char2speech.text = "...and gaze in astonishment as I conjure Homer’s creation before your eyes!";
+                Char2speech.text = "...and gaze in astonishment as I conjure Homer's creation before your eyes!";
         }
        else if (primeInt == 24){
 		   StartCoroutine(FadeIn(BlackFade, true));
@@ -188,7 +188,7 @@ public void Next(){
 			Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Ghost Actor";
-            Char2speech.text = "So, now you’ve witnessed my talent on display! What do you think?";
+            Char2speech.text = "So, now you've witnessed my talent on display! What do you think?";
         }
        else if (primeInt == 41){
                 Char1name.text = "";
@@ -222,7 +222,7 @@ public void Next(){
 	   } 
        else if (primeInt == 52){
                 Char1name.text = "YOU";
-                Char1speech.text = "I don’t think I have ever seen such bad acting in my life! \nA pumpkin puppetered by mice could have given me a better show!";
+                Char1speech.text = "I don't think I have ever seen such bad acting in my life! \nA pumpkin puppetered by mice could have given me a better show!";
                 Char2name.text = "";
                 Char2speech.text = "";
 				
@@ -260,7 +260,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Actor";
-                Char2speech.text = "I think the town would be very grateful to see my performance instead";
+                Char2speech.text = "I think the town would be very grateful to see my performance instead!";
         }
 		 else if (primeInt == 58){ //fade
 		  audioSource1.Play();
@@ -523,7 +523,7 @@ public void Next(){
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "I cannot listen to this.Where is the exit?";
+                Char1speech.text = "I cannot listen to this. Where is the exit?";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 19;
@@ -534,7 +534,7 @@ public void Next(){
         }
         public void Choice1bFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "Sure. Whatever it takes me to get out of this dump";
+                Char1speech.text = "Sure. Whatever it takes me to get out of this dump.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 29;

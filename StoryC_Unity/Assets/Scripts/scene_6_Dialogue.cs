@@ -103,7 +103,7 @@ public void Next(){
                 Char1name.text = " ";
                 Char1speech.text = " ";
                 Char2name.text = "Ghost Farmer";
-                Char2speech.text = "LETS SEE HOW THEY LIKE LOSING EVERYTHING";
+                Char2speech.text = "LETS SEE HOW THEY LIKE LOSING EVERYTHING!";
 			Char3name.text = " ";
 			Char3speech.text = " ";
 					Char4name.text = " ";
@@ -189,7 +189,7 @@ public void Next(){
         }
        else if (primeInt == 21){
                 Char1name.text = "YOU";
-                Char1speech.text = "A drink man. \nI've got some whiskey in my thermos, something to take the edge off";
+                Char1speech.text = "A drink man. \nI've got some whiskey in my thermos, something to take the edge off.";
                 Char2name.text = "";
                 Char2speech.text = "";
 		Char3name.text = " ";
@@ -295,7 +295,7 @@ public void Next(){
 				 }
        else if (primeInt == 36){
                 Char1name.text = "YOU";
-                Char1speech.text = "... Maybe you can move on from your purgatory. maybe you can see your family.";
+                Char1speech.text = "... Maybe you can move on from your purgatory. Maybe you can see your family.";
                 Char2name.text = "";
                 Char2speech.text = "";
 					Char3name.text = " ";
@@ -365,7 +365,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Farmer";
-                Char2speech.text = "I hope you're right about this";
+                Char2speech.text = "I hope you're right about this....";
 			Char3name.text = " ";
 			Char3speech.text = " ";
 			Char4name.text = " ";
@@ -390,7 +390,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Farmer";
-                Char2speech.text = "I read that Holy Book every night ‘fore bed and I aint never seen nothing like that in there!";
+                Char2speech.text = "I read that Holy Book every night 'fore bed and I aint never seen nothing like that in there!";
 				Char3name.text = " ";
 		Char3speech.text = " ";
 		Char4name.text = " ";

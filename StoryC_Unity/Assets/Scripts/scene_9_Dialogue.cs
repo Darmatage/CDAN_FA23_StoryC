@@ -111,7 +111,7 @@ void Start(){
                 Char2name.text = "";
 			Char2speech.text = "";
 				Char3name.text = "Bank Worker 1";
-			Char3speech.text = "Run away! There’s a ghost!";
+			Char3speech.text = "Run away! There's a ghost!";
 				Char4name.text = "";
 			Char4speech.text = "";
 				Char5name.text = "";
@@ -139,7 +139,7 @@ void Start(){
 				Char1name.text = "";
 			Char1speech.text = "";
                 Char2name.text = "Ghost Accountant";
-			Char2speech.text = "You people don’t deserve money if you don’t even know how to handle it!";
+			Char2speech.text = "You people don't deserve money if you don't even know how to handle it!";
 				Char3name.text = "";
 			Char3speech.text = "";
 				Char4name.text = "";
@@ -163,7 +163,7 @@ void Start(){
 		}
 		else if (primeInt == 7){
 				Char1name.text = "YOU";
-			Char1speech.text = "Woah– he’s throwing things everywhere! This is dangerous!";
+			Char1speech.text = "Woah- he's throwing things everywhere! This is dangerous!";
                 Char2name.text = "";
 			Char2speech.text = "";
 				Char3name.text = "";
@@ -198,7 +198,7 @@ void Start(){
 				Char1name.text = "";
 			Char1speech.text = "";
                 Char2name.text = "Ghost Accountant";
-			Char2speech.text = "Shut up kid. You can’t handle your fiances, let alone me!";
+			Char2speech.text = "Shut up kid. You can't handle your fiances, let alone me!";
 				Char3name.text = "";
 			Char3speech.text = "";
 				Char4name.text = "";
@@ -218,7 +218,7 @@ void Start(){
 				Char3name.text = "";
 			Char3speech.text = "";
 				Char4name.text = "Worker 2";
-			Char4speech.text = "Ah! It’s throwing pens!";
+			Char4speech.text = "Ah! It's throwing pens!";
 				Char5name.text = "";
 			Char5speech.text = "";
 		}
@@ -228,7 +228,7 @@ void Start(){
 			ArtChar1c.SetActive(true);
 			
 				Char1name.text = "YOU";
-			Char1speech.text = "Stop throwing pens! Ow! Ack– I better get behind a desk!";
+			Char1speech.text = "Stop throwing pens! Ow! Ack- I better get behind a desk!";
                 Char2name.text = "";
 			Char2speech.text = "";
 				Char3name.text = "";
@@ -288,7 +288,7 @@ void Start(){
 	   
 		else if (primeInt == 33){
 				Char1name.text = "YOU";
-			Char1speech.text = "How? We can’t fight him. He’s too powerful!";
+			Char1speech.text = "How? We can't fight him. He's too powerful!";
                 Char2name.text = "";
 			Char2speech.text = "";
 				Char3name.text = "";
@@ -371,7 +371,7 @@ void Start(){
 		
 		else if (primeInt == 41){
 				Char1name.text = "YOU";
-			Char1speech.text = "I said you need to stop";
+			Char1speech.text = "I said you need to stop!";
                 Char2name.text = "";
 			Char2speech.text = "";
 				Char3name.text = "";
@@ -386,7 +386,7 @@ void Start(){
 				Char1name.text = "";
 			Char1speech.text = "";
                 Char2name.text = "Ghost Accountant";
-			Char2speech.text = "Accountant: Eat pens, wastrel!";
+			Char2speech.text = "Eat pens, wastrel!";
 				Char3name.text = "";
 			Char3speech.text = "";
 				Char4name.text = "";
@@ -405,7 +405,7 @@ void Start(){
 				Char1name.text = "";
 			Char1speech.text = "";
                 Char2name.text = "Ghost Accountant";
-			Char2speech.text = "Accountant: My...family?";
+			Char2speech.text = "My...family?";
 				Char3name.text = "";
 			Char3speech.text = "";
 				Char4name.text = "";
@@ -415,7 +415,7 @@ void Start(){
 		}
 		 else if (primeInt == 51){
 				Char1name.text = "YOU";
-			Char1speech.text = "Yeah, this guy says they are still alive";
+			Char1speech.text = "Yeah, this guy says they are still alive.";
                 Char2name.text = "";
 			Char2speech.text = "";
 				Char3name.text = "";
@@ -453,7 +453,7 @@ void Start(){
 				Char1name.text = "";
 			Char1speech.text = "";
                 Char2name.text = "Ghost Accountant";
-			Char2speech.text = "You’re right. If my children saw their father like this, what example would I be setting.";
+			Char2speech.text = "You're right. If my children saw their father like this, what example would I be setting.";
 				Char3name.text = "";
 			Char3speech.text = "";
 				Char4name.text = "";
@@ -475,7 +475,7 @@ void Start(){
 				Char4name.text = "";
 			Char4speech.text = "";
 				Char5name.text = "Bank Manager Jerry";
-			Char5speech.text = "Here.I have written down their current address. Please leave.";
+			Char5speech.text = "Here. I have written down their current address. Please leave.";
 		}	
 		else if (primeInt == 56){
 			ArtChar4a.SetActive(false);
@@ -505,7 +505,7 @@ void Start(){
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "Please stop this. You’re scaring everyone and destroying the bank!";
+                Char1speech.text = "Please stop this. You're scaring everyone and destroying the bank!";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 19;

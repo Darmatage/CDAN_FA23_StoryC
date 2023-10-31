@@ -162,7 +162,7 @@ public void Next(){
         }
        else if (primeInt == 21){
                 Char1name.text = "YOU";
-                Char1speech.text = "It's 10pm. People are trying to get some sleep";
+                Char1speech.text = "It's 10pm. People are trying to get some sleep!";
                 Char2name.text = "";
                 Char2speech.text = "";
         }

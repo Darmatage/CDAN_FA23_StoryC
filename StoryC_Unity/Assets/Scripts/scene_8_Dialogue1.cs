@@ -150,7 +150,7 @@ public void Next(){
 				 }
        else if (primeInt == 9){
                 Char1name.text = "YOU";
-                Char1speech.text = "God he's even worse alive than dead";
+                Char1speech.text = "God he's even worse alive than dead.";
                 Char2name.text = "";
      	        Char2speech.text = "";
 				Char3name.text = "";
@@ -189,7 +189,7 @@ public void Next(){
 				}
        else if (primeInt == 12){
                 Char1name.text = "YOU";
-                Char1speech.text = "I don't know how much more I can take of this";
+                Char1speech.text = "I don't know how much more I can take of this.";
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "";
@@ -213,7 +213,7 @@ public void Next(){
 				}
        else if (primeInt == 14){
                 Char1name.text = "YOU";
-                Char1speech.text = "What? Oh shit he's not looking too good";
+                Char1speech.text = "What? Oh shit he's not looking too good.";
                 Char2name.text = "";
                 Char2speech.text = "";
 				  Char3name.text = "";
@@ -237,7 +237,7 @@ public void Next(){
 					}
        else if (primeInt == 16){
                 Char1name.text = "YOU";
-                Char1speech.text = "He is defintely not fine";
+                Char1speech.text = "He is defintely not fine.";
                 Char2name.text = "";
                 Char2speech.text = "";
 				  Char3name.text = "";
@@ -275,7 +275,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Actor";
-                Char2speech.text = "...My audience, for I am like a flower: beautiful, but short lived";
+                Char2speech.text = "...My audience, for I am like a flower: beautiful, but short lived.";
 				  Char3name.text = "";
                 Char3speech.text = "";
 				  Char4name.text = "";
@@ -285,7 +285,7 @@ public void Next(){
 				}
        else if (primeInt == 20){
                 Char1name.text = "YOU";
-                Char1speech.text = "What a fuckin dork";
+                Char1speech.text = "What a fuckin dork.";
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "";
@@ -349,7 +349,7 @@ public void Next(){
    
        else if (primeInt == 25){
                 Char1name.text = "YOU";
-                Char1speech.text = "I can't belive these guys actually like him";
+                Char1speech.text = "I can't belive these guys actually like him.";
                 Char2name.text = "";
                 Char2speech.text = "";
 				Char3name.text = "";

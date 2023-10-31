@@ -87,7 +87,7 @@ public void Next(){
         }
        else if (primeInt == 4){
                 Char1name.text = "YOU";
-                Char1speech.text = " Whats that smell?";
+                Char1speech.text = " What's that smell?";
                 Char2name.text = " ";
                 Char2speech.text = " ";
         }
@@ -101,7 +101,7 @@ public void Next(){
         }
        else if (primeInt == 6){
                 Char1name.text = "YOU";
-                Char1speech.text = "Thats disgusting! I can barely breathe!";
+                Char1speech.text = "That's disgusting! I can barely breathe!";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -152,13 +152,13 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Farmer";
-                Char2speech.text = "Drank myself to death, coudln't live with what I had done...";
+                Char2speech.text = "Drank myself to death, couldn't live with what I had done...";
         }
        else if (primeInt == 21){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Farmer";
-                Char2speech.text = "...Do yourself a favor,boy. DOn't go anywhere near dice or cards. Ain't nothihg good bout being a betting man.";
+                Char2speech.text = "...Do yourself a favor, boy. Don't go anywhere near dice or cards. Ain't nothihg good bout being a betting man.";
         
 				 }
        else if (primeInt == 22){
@@ -173,13 +173,13 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Farmer";
-                Char2speech.text = "Dragons?Dungeons? I don't even want to know what kind of depravity you get up to...";
+                Char2speech.text = "Dragons? Dungeons? I don't even want to know what kind of depravity you get up to...";
 				 }
        else if (primeInt == 24){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Farmer";
-                Char2speech.text = "... All I need is my turnips";
+                Char2speech.text = "... All I need is my turnips.";
 				 }
        else if (primeInt == 25){
                 Char1name.text = "YOU";
@@ -221,7 +221,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Farmer";
-                Char2speech.text = "...Have wworked this land for generations. We were proud of our farm, of our tradition, our ethic.";
+                Char2speech.text = "...Have worked this land for generations. We were proud of our farm, of our tradition, our ethic.";
 				 }
        else if (primeInt == 34){
                 Char1name.text = "YOU";
@@ -233,7 +233,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Farmer";
-                Char2speech.text = "That I did. Untill I saw fit to throw it all in the shitter...";
+                Char2speech.text = "That I did. Until I saw fit to throw it all in the shitter...";
 				 }
        else if (primeInt == 36){
                 Char1name.text = "";
@@ -257,7 +257,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Farmer";
-                Char2speech.text = "Ended up losing it all. Bet the whole damn farm on a toss";
+                Char2speech.text = "Ended up losing it all. Bet the whole damn farm on a toss.";
       // Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -289,7 +289,7 @@ public void Next(){
 	  }
 	  else if (primeInt == 44){
                 Char1name.text = "YOU";
-                Char1speech.text = "Woah calm down, its just turnips man, theres no need to be upset.";
+                Char1speech.text = "Woah calm down, it's just turnips man, there's no need to be upset.";
                 Char2name.text = "";
                 Char2speech.text = "";
 	  }  
@@ -372,7 +372,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Farmer";
-                Char2speech.text = "...Gambled away my bou's college money. Guess he never did forgive me for that. Doubt he even came to the funeral";
+                Char2speech.text = "...Gambled away my boy's college money. Guess he never did forgive me for that. Doubt he even came to the funeral.";
 	  }	  
 	  else if (primeInt == 56){
                 Char1name.text = "YOU";
@@ -382,7 +382,7 @@ public void Next(){
 	  }	  
 	  else if (primeInt == 57){
                 Char1name.text = "YOU";
-                Char1speech.text = "... Took him years to finally beat it. He did a lot of things he isnt proud of during that time but he learned to live with his mistakes.";
+                Char1speech.text = "... Took him years to finally beat it. He did a lot of things he isn't proud of during that time but he learned to live with his mistakes.";
  
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -440,7 +440,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost farmer ";
-                Char2speech.text = " Dont be too hasty with your assumptions, my boy!";
+                Char2speech.text = " Don't be too hasty with your assumptions, my boy!";
 	}
 	else if (primeInt == 74){
 		ArtChar1a.SetActive(false);
@@ -456,14 +456,14 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Farmer";
-                Char2speech.text = "...he didn’t see much of my gambling but he grew away from me. Guess I wasn’t that great to be around so I dont blame him.";
+                Char2speech.text = "...he didn't see much of my gambling but he grew away from me." ;
 	}
 	else if (primeInt == 76){
 		audioSource1.Play();
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Farmer";
-                Char2speech.text = "Guess I wasn’t that great to be around so I dont blame him.";
+                Char2speech.text = "Guess I wasn't that great to be around so I dont blame him.";
 	}	
 
 	else if (primeInt == 76){
@@ -473,7 +473,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ghost Farmer";
-                Char2speech.text = "BUT I AM STILL RILED UP AND GONNA TELL 'IM SO!.";
+                Char2speech.text = "BUT I AM STILL RILED UP AND GONNA TELL 'EM SO!.";
 	}
 
 	else if (primeInt == 77){
